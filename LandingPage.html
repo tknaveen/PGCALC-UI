@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PG Calc</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet"
+      href="assets/vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/mdi/css/materialdesignicons.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg full-navbar p-0">
+      <div class="container-fluid p-0 align-items-end position-relative">
+        <div class="d-flex align-items-center toggler-nav position-absolute h-100">
+          <img src="assets/img/logo.png" alt="" class="logo h-100">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="w-100">
+            <!-- Top Row -->
+            <div class="top-row d-flex justify-content-center py-1">
+              <div class="top-row-content d-flex justify-content-between align-items-center px-5 flex-shrink-1">
+                <div class="d-flex gap-4">
+                  <span>MULTICLIENTB42 : Administrator 40</span>
+                  <span>Last Login : 04 / 17 / 2024
+                    <span class="ms-2">07:20 AM ET</span></span>
+                  <span>Latest Product Info</span>
+                </div>
+                <div class="icons d-flex">
+                  <span><img src="assets/img/profile.svg" alt=""></span>
+                  <span><img src="assets/img/info.svg" alt=""></span>
+                  <span><img src="assets/img/log-out.svg" alt=""></span>
+                </div>
+              </div>
+            </div>
+            <!-- Bottom Row -->
+            <div class="bottom-row">
+              <ul class="nav-menu">
+
+                <!-- Actions -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Actions</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Actions</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="LandingPage.html">Person Search</a>
+                        <a href="#">Data Sync</a>
+                        <a href="#">Remainder Search</a>
+                        <a href="#">Gift Search</a>
+                        <a href="#">Add Person / Advisor</a>
+                        <a href="#">Add Gift / Person from File</a>
+                      </div>
+                      <!-- Column 2 -->
+                      <div class="dropdown-column">
+                        <a href="#">Maintain Fund / Pool Values</a>
+                        <a href="#">Maintain Historical Gift Values</a>
+                        <a href="#">Copy Gift Values to Historical Table</a>
+                      </div>
+                      <!-- Column 3 -->
+                      <div class="dropdown-column">
+                        <a href="#">CashTrac CGA Market Values</a>
+                        <a href="#">Year End Update</a>
+                      </div>
+                      <!-- Column 4 -->
+                      <div class="dropdown-column">
+                        <a href="#">Globally Update Seasonal Addresses</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Summaries -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Summaries</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Summaries</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Bequest Summary</a>
+                        <a href="#">Bequest Summary by Designation</a>
+                        <a href="#">Legacy Society Membership</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Person Summary</a>
+                        <a href="#">Prospect Summary</a>
+                        <a href="#">Advisor Summary</a>
+                        <a href="#">Gift Summary</a>
+                        <a href="#">Gift Summary by Designation</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Organization Summary</a>
+                        <a href="#">Pooled Income Fund Summary</a>
+                        <a href="#">Designation Summary</a>
+                        <a href="#">Rating Summary</a>
+                        <a href="#">Officer Summary</a>
+                        <a href="#">Advisor Type Summary</a>
+                        <a href="#">Legacy Society Summary</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Organization Group Summary</a>
+                        <a href="#">Individual / Person Summary</a>
+                        <a href="#">Person Profile</a>
+                        <a href="#">Gift Profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Analysis -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Analysis</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Analysis</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Bequest Pipeline</a>
+                        <a href="#">Bequest Transactions</a>
+                        <a href="#">CGA Market Value Transaction Details</a>
+                        <a href="#">Historical Gift Values</a>
+                        <a href="#">Gift Tally</a>
+                        <a href="#">Projected Remainder Amounts</a>
+                        <a href="#">Program Overview and Statistics</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Compliance -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Compliance</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Compliance</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Gift Annuity Reserves - State Method</a>
+                        <a href="#">Gift Annuity Reserves - Custom Method</a>
+                        <a href="#">FASB Liabilities</a>
+                        <a href="#">Reset FDGA Dates/Percentages</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Payments -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Payments</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Payments</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Payment Summary Reports</a>
+                        <a href="#">Checks / Upload</a>
+                        <a href="#">Advices / Files</a>
+                        <a href="#">EFT Summary Reports</a>
+                        <a href="#">EFT Files</a>
+                        <a href="#">Payment Settings</a>
+                        <a href="#">Check Register</a>
+                        <a href="#">Payment Snapshots / Void</a>
+                        <a href="#">Reconcile Payments</a>
+                        <a href="#">Recompute Unitrust Payments</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- 1099 Tax -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">1099 Tax</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">1099 Tax</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">1099 Summary</a>
+                        <a href="#">Print 1099-R Forms</a>
+                        <a href="#">Create IRS 1099 File / Upload</a>
+                        <a href="#">CGA Tax Summary</a>
+                        <a href="#">Outside Transmitter for 1099 File</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- PIF -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">PIF</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">PIF</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Update to New Period</a>
+                        <a href="#">Unitize New Gifts</a>
+                        <a href="#">Distribute Income</a>
+                        <a href="#">Correct Past Distribution</a>
+                        <a href="#">Compute PIF Market Values</a>
+                        <a href="#">Account Summary</a>
+                        <a href="#">Annual Report</a>
+                        <a href="#">Yearly Rate of Return</a>
+                        <a href="#">Tax Reporting</a>
+                        <a href="#">Tax Withholding Summary</a>
+                        <a href="#">Maintain Fund Tax Data</a>
+                        <a href="#">Import Fund Tax Data</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Tasks -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Tasks</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Tasks</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Dashboard</a>
+                        <a href="#">Maintain Tasks</a>
+                        <a href="#">Task Report</a>
+                        <a href="#">Task Definition</a>
+                        <a href="#">Change Request Report</a>
+                        <a href="#">View Change Requests</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Utilities -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Utilities</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Utilities</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Verify Person and Gift Data</a>
+                        <a href="#">Data Export</a>
+                        <a href="#">Mail Merge Data</a>
+                        <a href="#">Display Record Counts</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Duplicate Validation Report</a>
+                        <a href="#">Move Associations</a>
+                        <a href="#">Individual/Person Maintenance</a>
+                        <a href="#">Individual/Person Address Review</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Global Replace</a>
+                        <a href="#">Move/Combine Organization</a>
+
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Document Search / Upload</a>
+                        <a href="#">Import Cleared Checks</a>
+                        <a href="#">Import Home Addresses</a>
+                        <a href="#">Import Names / Home Addresses</a>
+                        <a href="#">Import Market Values / Account Nums</a>
+                        <a href="#">Import Fund/Pool Values</a>
+                        <a href="#">Review Audit Information</a>
+                        <a href="#">Reset Market Values</a>
+                        <a href="#">Submit Change Request</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Setup -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Setup</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Setup</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Organization</a>
+                        <a href="#">Pooled Income Fund</a>
+                        <a href="#">Designation</a>
+                        <a href="#">Rating</a>
+                        <a href="#">Officer</a>
+                        <a href="#">Advisor Type</a>
+                        <a href="#">Legacy Society</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">State Reserve Percentage</a>
+                        <a href="#">Standard State Reserve Mortality Table</a>
+                        <a href="#">Custom State Reserve Mortality Table</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Organization Groups for Reporting</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="charity-setup.html">Charity Setup</a>
+                        <a href="#">Administrator - User Accounts</a>
+                        <a href="#">Administrator - Unlock/Password Reset</a>
+                        <a href="#">Administrator - Roles</a>
+                        <a href="#">Administrator - Settings/Monitoring</a>
+                        <a href="#">Administrator - License Usage Report</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Quick Launch Grid -->
+   <div class="container-fluid p-0 z-0 my-2 my-md-2 container-main">
+      <div class="bg-white rounded-3 shadow-sm overflow-hidden content-box">
+        <div class="d-flex justify-content-between align-items-center px-2 py-1 border-bottom flex-wrap container-head">
+          <div class="d-flex align-items-center gap-2">
+            <h6 class="mb-0">Quick Launch</h6>
+          </div>
+          <a href="#"><i class="mdi mdi-help-circle-outline fs-5"></i></a>
+        </div>
+
+        <div class="p-3">
+          <div class="row g-3 px-5">
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="p-3 rounded-3 custom-bg-1 h-100 text-white quick-card">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h5 class="fw-normal mb-0">Person Search</h5>
+                  <img src="assets/img/person-search.svg" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="p-3 rounded-3 custom-bg-2 h-100 text-white quick-card">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h5 class="fw-normal mb-0">Gift Search</h5>
+                  <img src="assets/img/giftsearch.svg" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="p-3 rounded-3 custom-bg-3 h-100 text-white quick-card">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h5 class="fw-normal mb-0">Add Person</h5>
+                  <img src="assets/img/person-add.svg" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="p-3 rounded-3 custom-bg-4 h-100 text-white quick-card">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h5 class="fw-normal mb-0">Person Summary</h5>
+                  <img src="assets/img/person-summary.svg" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="p-3 rounded-3 custom-bg-5 h-100 text-white quick-card">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h5 class="fw-normal mb-0">Gift Summary</h5>
+                  <img src="assets/img/gift-summary.svg" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="p-3 rounded-3 custom-bg-6 h-100 text-white quick-card">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h5 class="fw-normal mb-0">Payment Summary</h5>
+                  <img src="assets/img/payment-summary.svg" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center pt-3">
+            <p class="small text-muted mb-0">
+              <i class="fa fa-exclamation-triangle text-warning me-1"></i>
+              To suppress the quick launch screen, click the Account link at the
+              top of the page
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center py-1 small text-muted">
+      &copy; Copyright 2024 PG Calc. All rights reserved.
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

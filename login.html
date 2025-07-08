@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PG Calc Login</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    .login-wrapper {
+      background: url('assets/img/Login.svg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content-login {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      height: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .left {
+      flex: 1;
+      /* removed gray background to let the image show */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      backdrop-filter: blur(5px); /* optional for readability */
+    }
+    .left img {
+      max-width: 200px;
+      margin-bottom: 1rem;
+    }
+    .left h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(15px);
+    }
+    .login-box {
+      width: 100%;
+      max-width: 400px;
+      background: rgba(255,255,255,0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      height: 500px;
+      overflow: auto;
+      position: relative;
+    }
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      color: #000;
+    }
+    .login-box label {
+      font-weight: bold;
+      font-size: 0.85rem;
+    }
+    .login-box input {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .login-box button {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #225c2a;
+      color: white;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background-color: #1a4721;
+    }
+    .error-message {
+      color: #c0392b;
+      background-color: #fce4e4;
+      padding: 0.5rem;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    .forgot {
+      text-align: right;
+      font-size: 0.8rem;
+    }
+    .notes-message {
+      background-color: white;
+      color: #333;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-wrapper">
+    <div class="content-login">
+      <div class="left">
+        <img src="assets/img/pg-Calc-logo.svg" alt="PG Calc Logo" />
+        <h1>Everything You Need in Planned Giving</h1>
+      </div>
+      <div class="right">
+        <div class="login-box">
+          <div class="error-message">
+            You have entered an invalid client, username, and password combination. Please try again.
+          </div>
+          <h2>GiftWrap Login</h2>
+          <label>Client Nickname</label>
+          <input type="text" value="multiclientb42" />
+          <label>Username</label>
+          <input type="text" value="administrator" />
+          <label>Password</label>
+          <input type="password" placeholder="Password" />
+          <button>Log In</button>
+          <div class="forgot"><a href="#">Forgot Password?</a></div>
+          <div class="notes-message">
+            This is a test. This is testing the ability to add a message. Hi Anand, this is testing the ability to add a message.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
