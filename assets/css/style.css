@@ -60,7 +60,7 @@ body {
 
 .bottom-row {
   background: var(--navbar-gradient);
-  padding: 0.5rem 0;
+  padding: 6px 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -326,12 +326,11 @@ input[type="radio"] {
     border: 1px solid #ddd;
     border-radius: 0.5rem;
 }
-
  .form-control,
     .form-select {
       font-size: 0.8rem;
       padding: 2px 4px;
-      height: auto;
+      min-height: 26px !important;
       border: 1px solid #b6b6b6;
     }
     .form-control-plaintext {
@@ -340,7 +339,7 @@ input[type="radio"] {
     .section-title {
       font-weight: bold;
       margin-bottom: 4px;
-      font-size: 0.96rem;
+      font-size: 0.9rem;
       background-color: #f4f4f4;
       border-bottom: 1px solid #ddd;
       color: #131313;
@@ -395,15 +394,14 @@ input[type="radio"] {
   }
  .nav-link.active {
     color: var(--text-light) !important;
-    background-color: var(--primary-color) !important;
+    background-color: #ff9200 !important;
 }
 .nav-link:hover{
-  color: var(--primary-color) !important;
-  background-color: #f4f4f4 !important;
+  color: #ff9200 !important;
 }
 .nav-link.active:hover{
-  color: var(--text-light) !important;
-  background-color: var(--primary-color) !important;
+color: var(--text-light) !important;
+    background-color: #ff9200 !important;
 }
 .g-4{
  --bs-gutter-y: 0.2rem !important;
@@ -486,6 +484,12 @@ ul{
 
 .w-80{
   width: 80%;
+}
+.w-35{
+  width: 35%;
+}
+.w-20{
+  width: 20%;
 }
 
   .division{

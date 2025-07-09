@@ -714,7 +714,7 @@
                     <div class="col-6 px-1">
                       <ul class="p-0 m-0">
                         <li class="d-flex gap-2 align-items-center pb-1">
-                          <label class="w-20 mb-0 label">Admin Level</label>
+                          <label class="w-15 mb-0 label">Admin Level</label>
                           <div class="d-flex gap-2">
                             <div class="form-check m-0">
                               <input class="form-check-input" type="radio" name="adminLevel" checked="">
@@ -727,7 +727,7 @@
                           </div>
                         </li>
                         <li class="d-flex gap-2 align-items-center pb-1">
-                          <label class="w-20 mb-0 label">Positive Pay</label>
+                          <label class="w-14 mb-0 label">Positive Pay</label>
                           <input class="form-check-input m-0" type="checkbox">
                         </li>
                         <li class="d-flex gap-2 align-items-center pb-4">
@@ -777,7 +777,7 @@
                             #2</label>
                           <input class="form-control form-control-sm" value="64564564567656756756">
                         </li>
-                        <li class="d-flex gap-2 align-items-center pb-1">
+                        <li class="d-flex gap-2 align-items-center pb-1 pt-2">
                           <label class="w-100 mb-0 label">Advice Mailing
                             Instructions</label>
                           <select class="form-select form-select-sm w-100 fs-sm">
@@ -788,7 +788,9 @@
                         <li class="pb-1">
                           <textarea class="form-control form-control-sm w-100" placeholder="Notes"></textarea>
                         </li>
-                        <li class="d-flex gap-2 align-items-center pb-1">
+                        <li class="d-flex gap-2 align-items-center pb-1" style="
+    height: 30px;
+">
                           <label class="w-50 mb-0 label pt-1">Custom Envelope</label>
                         </li>
                         <li>
@@ -811,13 +813,13 @@
       <div class="border rounded-2 mb-1">
         <div class="p-1 ps-2">
 
-          <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-100 fw-bold mb-0">Relationship Manager</label>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-50 fw-bold mb-0">Relationship Manager</label>
             <select class="form-select form-select-sm w-100 fs-sm">
               <option>Administrator</option>
             </select>
           </div>
-          <div class="mb-1 d-flex align-items-center gap-2">
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
             <label class="label w-30 mb-0">First Name</label>
             <input class="form-control form-control-sm fs-sm w-100" value="grrrrrrrrrrrrrr">
           </div>
@@ -836,7 +838,7 @@
           <div class="d-flex align-items-center gap-2">
             <label class="label w-30 mb-0">Phone</label>
             <input class="form-control form-control-sm fs-sm w-100" value="2333333333333333">
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -846,13 +848,13 @@
       <div class="border rounded-2 mb-1">
         <div class="p-1 ps-2">
 
-          <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-100 fw-bold mb-0">CR Reviewer / Associate</label>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-50 fw-bold mb-0">CR Reviewer / Associate</label>
             <select class="form-select form-select-sm w-100 fs-sm">
               <option>Administrator</option>
             </select>
           </div>
-          <div class="mb-1 d-flex align-items-center gap-2">
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
             <label class="label w-30 mb-0">First Name</label>
             <input class="form-control form-control-sm fs-sm w-100">
           </div>
@@ -871,39 +873,139 @@
           <div class="d-flex align-items-center gap-2">
             <label class="label w-30 mb-0">Phone</label>
             <input class="form-control form-control-sm fs-sm w-100">
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
+  <!-- Primary Relationship contact -->
+<div class="row g-1">
+    <div class="col-md-6 mt-1">
+      <div class="border rounded-2 mb-1">
+        <div class="section-title mb-0 rounded-top-2 px-2">Primary Relationship Contact Information</div>
+        <div class="p-1 ps-2">
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Phone</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div> -->
+        </div>
+      </div>
+    </div>
 
+    <!-- Secondary Asset Manager -->
+    <div class="col-md-6 mt-1">
+      <div class="border rounded-2 mb-1">
+        <div class="section-title mb-0 rounded-top-2 px-2">Secondary Relationship Contact Information</div>
+        <div class="p-1 ps-2">
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Phone</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Primary Asset Manager -->
   <div class="row g-1">
     <div class="col-md-6 mt-1">
       <div class="border rounded-2 mb-1">
         <div class="section-title mb-0 rounded-top-2 px-2">Primary Asset Manager (AM) Contact Information</div>
-        <div class="p-1 ps-2">
+       <div class="p-1 ps-2">
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">First Name</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
           </div>
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Last Name</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
           </div>
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Title</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
           </div>
-          <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Email</label>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
             <input class="form-control form-control-sm fs-sm w-100">
           </div>
           <div class="d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Phone</label>
+            <label class="label w-25 mb-0">Phone</label>
             <input class="form-control form-control-sm fs-sm w-100">
-          </div>
-        </div>
+          </div> -->
+        </div> 
       </div>
     </div>
 
@@ -913,26 +1015,40 @@
         <div class="section-title mb-0 rounded-top-2 px-2">Secondary Asset Manager (AM) Contact Information</div>
         <div class="p-1 ps-2">
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">First Name</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
           </div>
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Last Name</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
           </div>
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Title</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
           </div>
-          <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Email</label>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
             <input class="form-control form-control-sm fs-sm w-100">
           </div>
           <div class="d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Phone</label>
+            <label class="label w-25 mb-0">Phone</label>
             <input class="form-control form-control-sm fs-sm w-100">
-          </div>
-        </div>
+          </div> -->
+        </div> 
       </div>
     </div>
   </div>
@@ -944,26 +1060,40 @@
         <div class="section-title mb-0 rounded-top-2 px-2">Primary Transfer Request (TR) Contact Information</div>
         <div class="p-1 ps-2">
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">First Name</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
           </div>
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Last Name</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
           </div>
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Title</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
           </div>
-          <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Email</label>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
             <input class="form-control form-control-sm fs-sm w-100">
           </div>
           <div class="d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Phone</label>
+            <label class="label w-25 mb-0">Phone</label>
             <input class="form-control form-control-sm fs-sm w-100">
-          </div>
-        </div>
+          </div> -->
+        </div> 
       </div>
     </div>
 
@@ -971,28 +1101,42 @@
     <div class="col-md-6 mt-1">
       <div class="border rounded-2">
         <div class="section-title mb-0 rounded-top-2 px-2">Secondary Transfer Request (TR) Contact Information</div>
-        <div class="p-1 ps-2">
+       <div class="p-1 ps-2">
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">First Name</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
           </div>
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Last Name</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
           </div>
           <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Title</label>
-            <input class="form-control form-control-sm fs-sm w-100">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
           </div>
-          <div class="mb-1 d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Email</label>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
             <input class="form-control form-control-sm fs-sm w-100">
           </div>
           <div class="d-flex align-items-center gap-2">
-            <label class="label w-30 mb-0">Phone</label>
+            <label class="label w-25 mb-0">Phone</label>
             <input class="form-control form-control-sm fs-sm w-100">
-          </div>
-        </div>
+          </div> -->
+        </div> 
       </div>
     </div>
   </div>
