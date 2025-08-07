@@ -14,6 +14,7 @@
       rel="stylesheet" />
   </head>
   <body>
+    <div id="dropdownBlurOverlay" class="blur-overlay"></div>
     <!-- Navbar -->
      <nav class="navbar navbar-expand-lg full-navbar p-0">
       <div class="container-fluid p-0 align-items-end position-relative">
@@ -26,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <div class="w-100">
             <!-- Top Row -->
-            <div class="top-row d-flex justify-content-center py-1">
+            <div class="top-row d-flex justify-content-center py-0">
               <div class="top-row-content d-flex justify-content-between align-items-center px-5 flex-shrink-1">
                 <div class="d-flex gap-4">
                   <span>MULTICLIENTB42 : Administrator 40</span>
@@ -188,7 +189,7 @@
                     <h6 class="text-head">1099 Tax</h6>
                     <div class="dropdown-inner container">
                       <div class="dropdown-column">
-                        <a href="#">1099 Summary</a>
+                        <a href="1099Tax.html">1099 Summary</a>
                         <a href="#">Print 1099-R Forms</a>
                         <a href="#">Create IRS 1099 File / Upload</a>
                         <a href="#">CGA Tax Summary</a>
@@ -437,5 +438,18 @@
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+      <script>
+    const blurOverlay = document.getElementById('dropdownBlurOverlay');
+    const dropdowns = document.querySelectorAll('.dropdown-custom');
+
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('mouseenter', () => {
+        blurOverlay.classList.add('active');
+      });
+      dropdown.addEventListener('mouseleave', () => {
+        blurOverlay.classList.remove('active');
+      });
+    });
+  </script>
   </body>
 </html>

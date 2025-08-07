@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charity Setup | PG Calc</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet" />
+  
+</head>
+  <body>
+  <div id="dropdownBlurOverlay" class="blur-overlay"></div>
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg full-navbar p-0">
+      <div class="container-fluid p-0 align-items-end position-relative">
+        <div class="d-flex align-items-center toggler-nav position-absolute h-100">
+          <img src="assets/img/logo.png" alt="" class="logo h-100">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="w-100">
+            <!-- Top Row -->
+            <div class="top-row d-flex justify-content-center py-0">
+              <div class="top-row-content d-flex justify-content-between align-items-center px-5 flex-shrink-1">
+                <div class="d-flex gap-4">
+                  <span>MULTICLIENTB42 : Administrator 40</span>
+                  <span>Last Login : 04 / 17 / 2024
+                    <span class="ms-2">07:20 AM ET</span></span>
+                  <span>Latest Product Info</span>
+                </div>
+                <div class="icons d-flex">
+                  <span><img src="assets/img/profile.svg" alt=""></span>
+                  <span><img src="assets/img/info.svg" alt=""></span>
+                  <span><img src="assets/img/log-out.svg" alt=""></span>
+                </div>
+              </div>
+            </div>
+            <!-- Bottom Row -->
+            <div class="bottom-row">
+              <ul class="nav-menu">
+
+                <!-- Actions -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Actions</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Actions</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="LandingPage.html">Person Search</a>
+                        <a href="#">Data Sync</a>
+                        <a href="#">Remainder Search</a>
+                        <a href="#">Gift Search</a>
+                        <a href="#">Add Person / Advisor</a>
+                        <a href="#">Add Gift / Person from File</a>
+                      </div>
+                      <!-- Column 2 -->
+                      <div class="dropdown-column">
+                        <a href="#">Maintain Fund / Pool Values</a>
+                        <a href="#">Maintain Historical Gift Values</a>
+                        <a href="#">Copy Gift Values to Historical Table</a>
+                      </div>
+                      <!-- Column 3 -->
+                      <div class="dropdown-column">
+                        <a href="#">CashTrac CGA Market Values</a>
+                        <a href="#">Year End Update</a>
+                      </div>
+                      <!-- Column 4 -->
+                      <div class="dropdown-column">
+                        <a href="#">Globally Update Seasonal Addresses</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Summaries -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Summaries</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Summaries</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Bequest Summary</a>
+                        <a href="#">Bequest Summary by Designation</a>
+                        <a href="#">Legacy Society Membership</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Person Summary</a>
+                        <a href="#">Prospect Summary</a>
+                        <a href="#">Advisor Summary</a>
+                        <a href="#">Gift Summary</a>
+                        <a href="#">Gift Summary by Designation</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Organization Summary</a>
+                        <a href="#">Pooled Income Fund Summary</a>
+                        <a href="#">Designation Summary</a>
+                        <a href="#">Rating Summary</a>
+                        <a href="#">Officer Summary</a>
+                        <a href="#">Advisor Type Summary</a>
+                        <a href="#">Legacy Society Summary</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Organization Group Summary</a>
+                        <a href="#">Individual / Person Summary</a>
+                        <a href="#">Person Profile</a>
+                        <a href="#">Gift Profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Analysis -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Analysis</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Analysis</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Bequest Pipeline</a>
+                        <a href="#">Bequest Transactions</a>
+                        <a href="#">CGA Market Value Transaction Details</a>
+                        <a href="#">Historical Gift Values</a>
+                        <a href="#">Gift Tally</a>
+                        <a href="#">Projected Remainder Amounts</a>
+                        <a href="#">Program Overview and Statistics</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Compliance -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Compliance</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Compliance</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Gift Annuity Reserves - State Method</a>
+                        <a href="#">Gift Annuity Reserves - Custom Method</a>
+                        <a href="#">FASB Liabilities</a>
+                        <a href="#">Reset FDGA Dates/Percentages</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Payments -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Payments</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Payments</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Payment Summary Reports</a>
+                        <a href="#">Checks / Upload</a>
+                        <a href="#">Advices / Files</a>
+                        <a href="#">EFT Summary Reports</a>
+                        <a href="#">EFT Files</a>
+                        <a href="#">Payment Settings</a>
+                        <a href="#">Check Register</a>
+                        <a href="#">Payment Snapshots / Void</a>
+                        <a href="#">Reconcile Payments</a>
+                        <a href="#">Recompute Unitrust Payments</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- 1099 Tax -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">1099 Tax</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">1099 Tax</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="1099Tax.html">1099 Summary</a>
+                        <a href="#">Print 1099-R Forms</a>
+                        <a href="#">Create IRS 1099 File / Upload</a>
+                        <a href="#">CGA Tax Summary</a>
+                        <a href="#">Outside Transmitter for 1099 File</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- PIF -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">PIF</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">PIF</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Update to New Period</a>
+                        <a href="#">Unitize New Gifts</a>
+                        <a href="#">Distribute Income</a>
+                        <a href="#">Correct Past Distribution</a>
+                        <a href="#">Compute PIF Market Values</a>
+                        <a href="#">Account Summary</a>
+                        <a href="#">Annual Report</a>
+                        <a href="#">Yearly Rate of Return</a>
+                        <a href="#">Tax Reporting</a>
+                        <a href="#">Tax Withholding Summary</a>
+                        <a href="#">Maintain Fund Tax Data</a>
+                        <a href="#">Import Fund Tax Data</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Tasks -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Tasks</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Tasks</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Dashboard</a>
+                        <a href="#">Maintain Tasks</a>
+                        <a href="#">Task Report</a>
+                        <a href="#">Task Definition</a>
+                        <a href="#">Change Request Report</a>
+                        <a href="#">View Change Requests</a>
+                      </div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                      <div class="dropdown-column"></div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Utilities -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Utilities</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Utilities</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Verify Person and Gift Data</a>
+                        <a href="#">Data Export</a>
+                        <a href="#">Mail Merge Data</a>
+                        <a href="#">Display Record Counts</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Duplicate Validation Report</a>
+                        <a href="#">Move Associations</a>
+                        <a href="#">Individual/Person Maintenance</a>
+                        <a href="#">Individual/Person Address Review</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Global Replace</a>
+                        <a href="#">Move/Combine Organization</a>
+
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Document Search / Upload</a>
+                        <a href="#">Import Cleared Checks</a>
+                        <a href="#">Import Home Addresses</a>
+                        <a href="#">Import Names / Home Addresses</a>
+                        <a href="#">Import Market Values / Account Nums</a>
+                        <a href="#">Import Fund/Pool Values</a>
+                        <a href="#">Review Audit Information</a>
+                        <a href="#">Reset Market Values</a>
+                        <a href="#">Submit Change Request</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Setup -->
+                <li class="nav-item dropdown-custom">
+                  <a href="#" class="d-flex gap-2 nav-title">Setup</a>
+                  <div class="custom-dropdown mega-dropdown">
+                    <h6 class="text-head">Setup</h6>
+                    <div class="dropdown-inner container">
+                      <div class="dropdown-column">
+                        <a href="#">Organization</a>
+                        <a href="#">Pooled Income Fund</a>
+                        <a href="#">Designation</a>
+                        <a href="#">Rating</a>
+                        <a href="#">Officer</a>
+                        <a href="#">Advisor Type</a>
+                        <a href="#">Legacy Society</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">State Reserve Percentage</a>
+                        <a href="#">Standard State Reserve Mortality Table</a>
+                        <a href="#">Custom State Reserve Mortality Table</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="#">Organization Groups for Reporting</a>
+                      </div>
+                      <div class="dropdown-column">
+                        <a href="charity-setup.html">Charity Setup</a>
+                        <a href="#">Administrator - User Accounts</a>
+                        <a href="#">Administrator - Unlock/Password Reset</a>
+                        <a href="#">Administrator - Roles</a>
+                        <a href="#">Administrator - Settings/Monitoring</a>
+                        <a href="#">Administrator - License Usage Report</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Charity Setup -->
+  <div class="container-fluid p-0 my-2 my-md-2 container-main">
+      <div class="bg-white rounded-3 shadow-sm overflow-hidden content-box">
+
+        <!-- Charity Setup Title Header -->
+        <div class="d-flex justify-content-between align-items-center px-3 py-1 border-bottom flex-wrap container-head">
+          <div class="d-flex align-items-center gap-2">
+            <h6 class="mb-0">Charity details</h6>
+          </div>
+         <div class="right-icons d-flex">
+          <div class="division">
+             <!-- Navigation -->
+  <button type="button" class="btn action-btn" title="First">
+    <i class="mdi mdi-skip-previous"></i>
+  </button>
+  <button type="button" class="btn action-btn" title="Previous">
+    <i class="mdi mdi-arrow-left-bold"></i>
+  </button>
+  <button type="button" class="btn action-btn" title="Next">
+    <i class="mdi mdi-arrow-right-bold"></i>
+  </button>
+  <button type="button" class="btn action-btn" title="Last">
+    <i class="mdi mdi-skip-next"></i>
+  </button>
+          </div>
+          <div class="division">
+            <!-- Actions -->
+  <button type="button" class="btn action-btn" title="Save">
+    <i class="mdi mdi-content-save"></i>
+  </button>
+  <button type="button" class="btn action-btn" title="Cancel">
+    <i class="mdi mdi-cancel"></i>
+  </button>
+  <button type="button" class="btn action-btn" title="Delete">
+    <i class="mdi mdi-delete"></i>
+  </button>
+          </div>
+          <div class="division">
+             <!-- Help / Close -->
+  <button type="button" class="btn action-btn" title="Help">
+    <i class="mdi mdi-help-circle-outline"></i>
+  </button>
+  <a href="LandingPage.html" class="icon-btn text-decoration-none" title="Close">
+  <i class="mdi mdi-window-close fs-5"></i>
+</a>
+          </div>
+</div>
+        </div>
+        <div class="inside-content p-1">
+          <!-- Bootstrap Nav Tabs -->
+          <ul class="nav nav-tabs border-0" role="tablist">
+            <li class="nav-item pee-1" role="presentation">
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#identification" aria-selected="true" role="tab">Identification</button>
+            </li>
+            <li class="nav-item pee-1" role="presentation">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#adminprofile" aria-selected="false" role="tab" tabindex="-1">Admin Profile</button>
+            </li>
+            <li class="nav-item pee-1" role="presentation">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contacts" aria-selected="false" role="tab" tabindex="-1">Contacts</button>
+            </li>
+            <li class="nav-item pee-1" role="presentation">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#exceptions" aria-selected="false" role="tab" tabindex="-1">Exceptions</button>
+            </li>
+            <li class="nav-item pee-1" role="presentation">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#synchronization" aria-selected="false" tabindex="-1" role="tab">Synchronization</button>
+            </li>
+          </ul>
+
+          <!-- Tab content with consistent box -->
+          <div class="tab-content bg-white border rounded p-1">
+
+            <!-- Identification Tab -->
+            <div class="tab-pane fade active show" id="identification" role="tabpanel">
+              <div class="section mb-1">
+                <div class="section-title px-2 m-0">Charity Identification</div>
+                <div class="sub-card pb-0 py-1 px-2">
+                  <div class="row align-items-center mb-1">
+                    <div class="col-12 col-md-3 label-col">Charity
+                      Nickname</div>
+                    <div class="col-6 col-md-3">
+                      <input class="form-control py-0" value="1ATEST" maxlength="20">
+                    </div>
+                    <div class="col-6 col-md-4 text-end fs-sm fw-bold px-0">
+                      <small class="me-1 fw-bold label">Charity ID:</small> 7343
+                    </div>
+                    <div class="col-6 col-md-2 text-end fs-sm fw-bold">
+                      <small class="me-1 fw-bold label">No of Orgs:</small> 4
+                    </div>
+                  </div>
+
+                  <div class="row align-items-center mb-1">
+                    <div class="col-12 col-md-3 label-col">Charity Name</div>
+                    <div class="col-6 col-md-4">
+                      <input class="form-control py-0" value="&lt;H1&gt;a&lt;/H1&gt;">
+                    </div>
+                  </div>
+
+                  <div class="row align-items-center">
+                    <div class="col-12 col-md-3 label-col">Last Export
+                      Date</div>
+                    <div class="col-6 col-md-6 d-flex gap-2 align-items-center">
+                      <span class="form-control-plaintext w-auto p-0">06/10/2025</span>
+                      <a href="#" class="small">Download exported Charity
+                        data</a>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-3 label-col py-2"></div>
+                    <div class="col-12 col-md-3 d-flex align-items-center justify-content-evenly">
+                      <label class="flex-shrink-1 label w-50">Account
+                        1</label>
+                      <input class="form-control p-0 px-1" value="233333333333333">
+                    </div>
+                    <div class="col-12 col-md-3 d-flex align-items-center justify-content-evenly py-2">
+                      <label class="label w-50">Account 2</label>
+                      <input class="form-control p-0 px-1" value="123333333333333">
+                    </div>
+                    <div class="col-12 col-md-3 d-flex align-items-center justify-content-evenly">
+                      <label class="label w-50">Account 3</label>
+                      <input class="form-control p-0 px-1" value="344444444444444">
+                    </div>
+                  </div>
+
+                  <div class="row mb-1">
+                    <div class="col-12 col-md-3 label-col">Payment Header
+                      1</div>
+                    <div class="col"><input class="form-control py-0 Mw-250"></div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="col-12 col-md-3 label-col">Payment Header
+                      2</div>
+                    <div class="col"><input class="form-control py-0 Mw-250"></div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="col-12 col-md-3 label-col">Payment Header
+                      3</div>
+                    <div class="col"><input class="form-control py-0 Mw-250"></div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="col-12 col-md-3 label-col">Payment Header
+                      Phone</div>
+                    <div class="col"><input class="form-control py-0 Mw-250"></div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="col-12 col-md-3 label-col">Payment Footer</div>
+                    <div class="col"><input class="form-control py-0" style="max-width: 652px;" value="sagarpwd"></div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="col-12 col-md-3 label-col">Check Delivery</div>
+                    <div class="col-4 col-md-3">
+                      <select class="form-select py-0">
+                        <option>Paper</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-3 label-col">Advice Delivery</div>
+                    <div class="col-3 col-md-3">
+                      <select class="form-select py-0 w-100">
+                        <option>Paper</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-1">
+                    <div class="col-12 col-md-3 label-col">Charity Advice
+                      Message</div>
+                    <div class="col"><textarea class="form-control py-0" style="max-width: 652px;"></textarea></div>
+                  </div>
+                </div>
+              </div>
+              <div class="section">
+                <div class="section-title px-2 m-0">Verify Person and Gift Data
+                  - Settings</div>
+                <div class="sub-card pb-0 py-1 px-2">
+                  <div class="row">
+                    <div class="col-6 left-side-checkbox">
+                      <div class="d-flex check-boxes">
+                        <label class="label mb-0">Suppress Pay to the Order Of Warnings</label>
+                        <input class="form-check-input m-0" type="checkbox" id="sup1">
+                      </div>
+                      <div class="d-flex check-boxes">
+                        <label class="label mb-0">Suppress Missing Joint Mail Information Warnings</label>
+                        <input class="form-check-input m-0" type="checkbox" id="sup1">
+                      </div>
+                      <div class="d-flex check-boxes">
+                       <label class="label mb-0">Suppress Certain Older Data Warnings</label>
+                        <input class="form-check-input m-0" type="checkbox" id="sup1">
+                      </div>
+                      <div class="d-flex check-boxes">
+                        <label class="label col-5 w-75 mb-0">Suppress Pay to the Order Of Warnings</label>
+                        <input class="form-check-input m-0" type="checkbox" id="sup1">
+                      </div>
+                    </div>
+                    <div class="col-6 right-side-checkbox">
+                      <div class="d-flex check-boxes1">
+                         <label class="label mb-0">Suppress Payment/Tax mismatches of less than $1</label>
+                        <input class="form-check-input m-0" type="checkbox" id="sup4">
+                      </div>
+                      <div class="d-flex check-boxes1">
+                       <label class="label mb-0">Suppress Payment/Tax mismatches of $1 or more</label>
+                       <input class="form-check-input m-0" type="checkbox" id="sup5">
+                      </div>
+                      <div class="d-flex check-boxes1">
+                         <label class="label mb-0">Suppress Payout %/Payment Amount mismatches of less than $1</label>
+                         <input class="form-check-input m-0" type="checkbox" id="sup6">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="row g-1 mb-2">
+  <div class="col-5 d-flex align-items-center">
+    <label class="label col-5 w-75 mb-0">Suppress Pay to the Order Of Warnings</label>
+    <input class="form-check-input m-0" type="checkbox" id="sup1">
+  </div>
+  <div class="col-6 d-flex align-items-center justify-content-end">
+    <label class="label col-5 mb-0 w-80">Suppress Payment/Tax mismatches of less than $1</label>
+    <input class="form-check-input m-0" type="checkbox" id="sup4">
+  </div>
+  <div class="col-5 d-flex align-items-center">
+    <label class="label col-5 mb-0 w-75">Suppress Missing Joint Mail Information Warnings</label>
+    <input class="form-check-input m-0" type="checkbox" id="sup2" checked="">
+  </div>
+  <div class="col-6 d-flex align-items-center justify-content-end">
+    <label class="label col-5 mb-0 w-80">Suppress Payment/Tax mismatches of $1 or more</label>
+    <input class="form-check-input m-0" type="checkbox" id="sup5">
+  </div>
+  <div class="col-5 d-flex align-items-center">
+    <label class="label col-5 mb-0 w-75">Suppress Certain Older Data Warnings</label>
+    <input class="form-check-input m-0" type="checkbox" id="sup3" checked="">
+  </div>
+  <div class="col-6 d-flex align-items-center justify-content-end">
+    <label class="label col-5 mb-0 w-80">Suppress Payout %/Payment Amount mismatches of less than $1</label>
+    <input class="form-check-input m-0" type="checkbox" id="sup6">
+  </div>
+  <div class="col-6 offset-md-5 d-flex align-items-center justify-content-end">
+    <label class="label col-5 mb-0 w-80">Suppress Payout %/Payment Amount mismatches of $1 or more</label>
+    <input class="form-check-input m-0" type="checkbox" id="sup7">
+  </div>
+</div> -->
+
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Other Tabs -->
+            <div class="tab-pane fade" id="adminprofile" role="tabpanel">
+              <div class="section mb-1">
+                <div class="section-title px-2 m-0">Gift Types Under
+                  Management</div>
+                <div class="sub-card py-1">
+                  <div class="row align-items-center g-2 flex-wrap">
+                    <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                      <label class="mb-0">All</label>
+                      <input class="form-check-input m-0" type="checkbox" checked="">
+                      <span>|</span>
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                      <label class="mb-0 fs-sm">CGA</label>
+                      <input class="form-check-input m-0" type="checkbox" disabled="">
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                      <label class="mb-0 fs-sm">PIF</label>
+                      <input class="form-check-input m-0" type="checkbox" disabled="">
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                      <label class="mb-0 fs-sm">CRU</label>
+                      <input class="form-check-input m-0" type="checkbox" disabled="">
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                      <label class="mb-0 fs-sm">CRAT</label>
+                      <input class="form-check-input m-0" type="checkbox" disabled="">
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                      <label class="mb-0 fs-sm">CLU</label>
+                      <input class="form-check-input m-0" type="checkbox" disabled="">
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                      <label class="mb-0 fs-sm">CLAT</label>
+                      <input class="form-check-input m-0" type="checkbox" disabled="">
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                      <label class="mb-0 fs-sm">OTH</label>
+                      <input class="form-check-input m-0" type="checkbox" disabled="">
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                      <label class="mb-0 fs-sm">BEQ</label>
+                      <input class="form-check-input m-0" type="checkbox" disabled="">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="section mb-1">
+                <div class="section-title px-2 m-0">Reporting</div>
+                <div class="sub-card pb-0">
+
+                  <div class="row">
+                    <div class="col-3">
+                      <ul class="p-0 m-0">
+                        <li class="d-flex gap-2 align-items-center pb-1">
+                          <label class="w-30 mb-0 label">CashTrac</label>
+                          <input class="form-check-input m-0" type="checkbox" checked="">
+                        </li>
+                        <li class="d-flex gap-2 pb-1">
+                          <label class="w-30 mb-0 label">Frequency</label>
+                          <select class="form-select form-select-sm w-50 fs-sm">
+                            <option>A</option>
+                            <option>S</option>
+                            <option>Q</option>
+                            <option>M</option>
+                          </select>
+                        </li>
+                        <li class="d-flex gap-2 pb-1">
+                          <label class="w-30 mb-0 label">1099s</label>
+                          <input class="form-check-input ms-0" type="checkbox">
+                        </li>
+                        <li class="d-flex gap-2 pb-1">
+                          <label class="w-30 mb-0 label">Reserves</label>
+                          <input class="form-check-input ms-0" type="checkbox">
+                        </li>
+                        <li class="d-flex gap-2 pb-1">
+                          <label class="w-30 mb-0 label">Fiscal YE</label>
+                          <input class="form-check-input ms-0" type="checkbox">
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul class="p-0 m-0">
+                        <li class="d-flex gap-2 pb-1">
+                          <label class="mb-0 label">FASB</label>
+                          <input class="form-check-input m-0" type="checkbox" checked="">
+                        </li>
+                        <li class="d-flex gap-2 align-items-center">
+                          <label class="m-0 label">Mortality
+                            Table</label>
+                          <select class="form-select form-select-sm w-50 fs-sm">
+                            <option selected="">1983 Basic</option>
+                            <option>1937</option>
+                            <option>2000CM</option>
+                          </select>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-5 pb-1">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="d-flex gap-2">
+                            <label class="w-50 mb-0 label">FASB Rate of
+                              Return</label>
+                            <div class="d-flex flex-wrap gap-2">
+                              <div class="form-check form-check-inline m-0">
+                                <input class="form-check-input" type="radio" name="fasbrate" checked="">
+                                <label class="form-check-label fs-sm">One
+                                  Rate</label>
+                              </div>
+                              <input class="form-control form-control-sm w-50" value="8.00000000">
+                              <div class="form-check form-check-inline m-0">
+                                <input class="form-check-input" type="radio" name="fasbrate">
+                                <label class="form-check-label fs-sm">Each
+                                  Gift's IRS Discount Rate</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <label class="mb-1 label">FASB Instructions</label>
+                          <textarea class="form-control form-control-sm w-100"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section mb-0">
+                <div class="section-title px-2 m-0">Admin / Payments</div>
+                <div class="sub-card p-1">
+                  <div class="row mx-0">
+                    <!-- LEFT SIDE -->
+                    <div class="col-6 px-1 pe-2">
+                      <ul class="p-0 m-0">
+                        <li class="d-flex gap-2 align-items-center pb-1">
+                          <label class="w-20 mb-0 label">Admin Level</label>
+                          <div class="d-flex gap-2">
+                            <div class="form-check m-0">
+                              <input class="form-check-input" type="radio" name="adminLevel" checked="">
+                              <label class="form-check-label fs-sm">Payments</label>
+                            </div>
+                            <div class="form-check m-0">
+                              <input class="form-check-input" type="radio" name="adminLevel">
+                              <label class="form-check-label fs-sm">Basic</label>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex gap-2 align-items-center pb-1">
+                          <label class="w-20 mb-0 label">Positive Pay</label>
+                          <input class="form-check-input m-0" type="checkbox">
+                        </li>
+                        <li class="d-flex gap-2 align-items-center pb-2">
+                          <label class="w-30 mb-0 label" style="width: 14%;">EFT</label>
+                          <input class="form-check-input m-0" type="checkbox">
+                        </li>
+                        <li class="d-flex gap-2 align-items-center pb-1 pt-2">
+                          <label class="w-100 mb-0 label">Check Mailing
+                            Instructions</label>
+                          <select class="form-select form-select-sm w-100 fs-sm">
+                            <option>No check processing</option>
+                            <option>Mail checks to charity</option>
+                          </select>
+                        </li>
+                        <li class="pb-1">
+                          <textarea class="form-control form-control-sm w-100" placeholder="Notes"></textarea>
+                        </li>
+                        <li class="d-flex gap-2 align-items-center pb-1">
+                          <label class="w-100 mb-0 label">Admin Fee Payment
+                            Instructions</label>
+                          <select class="form-select form-select-sm w-100 fs-sm">
+                            <option>Other Charity Sources</option>
+                            <option>From Fund</option>
+                          </select>
+                        </li>
+                        <li>
+                          <textarea class="form-control form-control-sm w-100" placeholder="Notes"></textarea>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- RIGHT SIDE -->
+                    <div class="col-6 px-1 ps-2">
+                      <ul class="p-0 m-0">
+                        <li class="d-flex gap-2 align-items-center pb-1">
+                          <label class="w-50 mb-0 label">Institutional
+                            Client</label>
+                          <input class="form-control form-control-sm" value="1234567890ds45645647">
+                        </li>
+                        <li class="d-flex gap-2 align-items-center pb-1">
+                          <label class="w-50 mb-0 label">Checking Account
+                            #1</label>
+                          <input class="form-control form-control-sm" value="14235345346545676575">
+                        </li>
+                        <li class="d-flex gap-2 align-items-center pb-1">
+                          <label class="w-50 mb-0 label">Checking Account
+                            #2</label>
+                          <input class="form-control form-control-sm" value="64564564567656756756">
+                        </li>
+                        <li class="d-flex gap-2 align-items-center pb-1">
+                          <label class="w-100 mb-0 label">Advice Mailing
+                            Instructions</label>
+                          <select class="form-select form-select-sm w-100 fs-sm">
+                            <option>Do not print or mail advices</option>
+                            <option>Mail to charity</option>
+                          </select>
+                        </li>
+                        <li class="pb-1">
+                          <textarea class="form-control form-control-sm w-100" placeholder="Notes"></textarea>
+                        </li>
+                        <li class="d-flex gap-2 align-items-center pb-1">
+                          <label class="w-50 mb-0 label pt-1">Custom Envelope</label>
+                        </li>
+                        <li>
+                          <textarea class="form-control form-control-sm w-100" placeholder="Notes"></textarea>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="contacts" role="tabpanel">
+              <div class="sub-card p-0">
+  <div class="row g-1">
+
+    <!-- Relationship Manager -->
+    <div class="col-md-6 mt-1">
+      <div class="border rounded-2 mb-1">
+        <div class="p-1 ps-2">
+
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-50 fw-bold mb-0">Relationship Manager</label>
+            <select class="form-select form-select-sm w-100 fs-sm">
+              <option>Administrator</option>
+            </select>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-30 mb-0">First Name</label>
+            <input class="form-control form-control-sm fs-sm w-100" value="grrrrrrrrrrrrrr">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-30 mb-0">Last Name</label>
+            <input class="form-control form-control-sm fs-sm w-100" value="weeeeeqqqqqqqq">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-30 mb-0">Title</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-30 mb-0">Email</label>
+            <input class="form-control form-control-sm fs-sm w-100" value="rqqqqqqqqqqqqqqqqqq">
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-30 mb-0">Phone</label>
+            <input class="form-control form-control-sm fs-sm w-100" value="2333333333333333">
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- CR Reviewer -->
+    <div class="col-md-6 mt-1">
+      <div class="border rounded-2 mb-1">
+        <div class="p-1 ps-2">
+
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-50 fw-bold mb-0">CR Reviewer / Associate</label>
+            <select class="form-select form-select-sm w-100 fs-sm">
+              <option>Administrator</option>
+            </select>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-30 mb-0">First Name</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-30 mb-0">Last Name</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-30 mb-0">Title</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-30 mb-0">Email</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-30 mb-0">Phone</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Primary Relationship contact -->
+<div class="row g-1">
+    <div class="col-md-6 mt-1">
+      <div class="border rounded-2 mb-1">
+        <div class="section-title mb-0 rounded-top-2 px-2">Primary Relationship Contact Information</div>
+        <div class="p-1 ps-2">
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Phone</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Secondary Asset Manager -->
+    <div class="col-md-6 mt-1">
+      <div class="border rounded-2 mb-1">
+        <div class="section-title mb-0 rounded-top-2 px-2">Secondary Relationship Contact Information</div>
+        <div class="p-1 ps-2">
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Phone</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Primary Asset Manager -->
+  <div class="row g-1">
+    <div class="col-md-6 mt-1">
+      <div class="border rounded-2 mb-1">
+        <div class="section-title mb-0 rounded-top-2 px-2">Primary Asset Manager (AM) Contact Information</div>
+       <div class="p-1 ps-2">
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Phone</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div> -->
+        </div> 
+      </div>
+    </div>
+
+    <!-- Secondary Asset Manager -->
+    <div class="col-md-6 mt-1">
+      <div class="border rounded-2 mb-1">
+        <div class="section-title mb-0 rounded-top-2 px-2">Secondary Asset Manager (AM) Contact Information</div>
+        <div class="p-1 ps-2">
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Phone</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div> -->
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Transfer Request -->
+  <div class="row g-1">
+    <div class="col-md-6 mt-1">
+      <div class="border rounded-2">
+        <div class="section-title mb-0 rounded-top-2 px-2">Primary Transfer Request (TR) Contact Information</div>
+        <div class="p-1 ps-2">
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Phone</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div> -->
+        </div> 
+      </div>
+    </div>
+
+    <!-- Secondary Transfer Request -->
+    <div class="col-md-6 mt-1">
+      <div class="border rounded-2">
+        <div class="section-title mb-0 rounded-top-2 px-2">Secondary Transfer Request (TR) Contact Information</div>
+       <div class="p-1 ps-2">
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">First Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Last Name</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-20 mb-0">Title</label>
+            <input class="form-control fs-sm w-100">
+          </div>
+          <div class="row mx-0">
+            <div class="col-8 ps-0">
+              <div class="mb-1 d-flex align-items-center gap-2">
+               <label class="label w-35 mb-0">Email</label>
+               <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+            <div class="col-4 p-0">
+              <div class="d-flex align-items-center gap-2">
+                <label class="label w-25 mb-0">Phone</label>
+                <input class="form-control fs-sm w-100">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="mb-1 d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Email</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <label class="label w-25 mb-0">Phone</label>
+            <input class="form-control form-control-sm fs-sm w-100">
+          </div> -->
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            </div>
+            <div class="tab-pane fade" id="exceptions" role="tabpanel">
+               <div class="table-wrapper">
+        <div class="d-flex justify-content-between align-items-center px-1 pb-2">
+          <div class="d-flex gap-1">
+             <button type="button" class="btn btn-3d btn-pg-green px-2 py-1" data-bs-toggle="modal" data-bs-target="#exceptionModal" title="Add Exception">
+              <i class="mdi mdi-plus fs-5"></i>
+            </button>
+            <button type="button" class="btn btn-3d btn-pg-blue d-flex align-items-center justify-content-center px-2 py-1" data-bs-toggle="tooltip" title="Print View">
+                  <i class="mdi mdi-printer fs-5"></i>
+            </button>
+          </div>
+          <h6 class="text-head mb-0">Charity Profile Exceptions</h6>
+          <div class="d-flex"></div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-striped table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Exception ID</th>
+                <th>Exception Subject</th>
+                <th>Date Last Updated</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12345</td>
+                <td>abc</td>
+                <td>12/03/2025</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-end pt-2 small text-muted px-2">
+            Page 1 of 1 | Records: 0
+          </div>
+        </div>
+      </div>
+          <!-- Modal -->
+<div class="modal fade" id="exceptionModal" tabindex="-1" aria-labelledby="exceptionModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content rounded-3 shadow">
+      <div class="modal-header container-head text-white d-flex justify-content-between align-items-center flex-wrap px-3 py-2">
+        <h6 class="mb-0">Charity Exception Information</h6>
+        <!-- <div class="right-icons d-flex gap-2">
+         
+          <button type="button" class="btn modal-icons" title="First" disabled><i class="mdi mdi-skip-previous"></i></button>
+          <button type="button" class="btn modal-icons" title="Previous" disabled><i class="mdi mdi-arrow-left-bold"></i></button>
+          <button type="button" class="btn modal-icons" title="Next" disabled><i class="mdi mdi-arrow-right-bold"></i></button>
+          <button type="button" class="btn modal-icons" title="Last" disabled><i class="mdi mdi-skip-next"></i></button>
+
+         
+          <button type="button" class="btn modal-icons" title="Save" disabled><i class="mdi mdi-content-save"></i></button>
+          <button type="button" class="btn modal-icons" title="Cancel" disabled><i class="mdi mdi-cancel"></i></button>
+          <button type="button" class="btn modal-icons" title="Delete" disabled><i class="mdi mdi-delete"></i></button>
+
+         
+          <button type="button" class="btn modal-icons" title="Help"><i class="mdi mdi-help-circle-outline"></i></button>
+          <button type="button" class="btn modal-icons" title="Close" data-bs-dismiss="modal">
+            <i class="mdi mdi-window-close fs-5"></i>
+          </button>
+        </div> -->
+         <div class="right-icons d-flex">
+          <div class="division">
+             <!-- Navigation -->
+  <button type="button" class="btn action-btn" title="First">
+    <i class="mdi mdi-skip-previous"></i>
+  </button>
+  <button type="button" class="btn action-btn" title="Previous">
+    <i class="mdi mdi-arrow-left-bold"></i>
+  </button>
+  <button type="button" class="btn action-btn" title="Next">
+    <i class="mdi mdi-arrow-right-bold"></i>
+  </button>
+  <button type="button" class="btn action-btn" title="Last">
+    <i class="mdi mdi-skip-next"></i>
+  </button>
+          </div>
+          <div class="division">
+            <!-- Actions -->
+  <button type="button" class="btn action-btn" title="Save">
+    <i class="mdi mdi-content-save"></i>
+  </button>
+  <button type="button" class="btn action-btn" title="Cancel">
+    <i class="mdi mdi-cancel"></i>
+  </button>
+  <button type="button" class="btn action-btn" title="Delete">
+    <i class="mdi mdi-delete"></i>
+  </button>
+          </div>
+          <div class="division">
+             <!-- Help / Close -->
+  <button type="button" class="btn action-btn" title="Help">
+    <i class="mdi mdi-help-circle-outline"></i>
+  </button>
+  <a href="" class="icon-btn text-decoration-none" title="Close" data-bs-dismiss="modal">
+  <i class="mdi mdi-window-close fs-5"></i>
+</a>
+          </div>
+</div>
+      </div>
+      
+
+      <div class="modal-body px-3 py-2">
+        <div class="mb-2">
+          <label for="ex-subject" class="label mb-1">Subject</label>
+          <input type="text" id="ex-subject" class="form-control">
+        </div>
+        <div class="mb-2">
+          <label for="ex-description" class="label mb-1">Description</label>
+          <textarea id="ex-description" rows="4" class="form-control"></textarea>
+        </div>
+        <div class="mb-2">
+          <label for="ex-date" class="label mb-1">Date Updated</label>
+          <input type="date" id="ex-date" class="form-control w-30">
+        </div>
+      </div>
+
+      <div class="modal-footer px-3 py-2 border-top">
+        <button type="button" class="btn btn-modal-cancel btn-sm" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-modal-save btn-sm">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+            <div class="tab-pane fade" id="synchronization" role="tabpanel">
+             <div class="section mb-2">
+  <div class="section-title px-2 m-0">Synchronization with External Database Application</div>
+  <div class="sub-card">
+    <div class="row">
+      <!-- Left Column -->
+     <div class="col-md-9">
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <label class="label w-20 mb-0">CRM Type:</label>
+            <div class="w-100">
+               <div class="dropdown w-50">
+  <button class="form-select text-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Select CRM Type
+  </button>
+  <ul class="dropdown-menu w-100 shadow">
+    <li>
+      <div class="d-flex px-3 fw-bold text-secondary small">
+        <div class="w-50">Name</div>
+        <div class="w-50">Description</div>
+      </div>
+    </li>
+    <li>
+      <a class="dropdown-item d-flex justify-content-between" href="#">
+        <span class="w-50">bb</span>
+        <span class="w-50">Blackbaud eCRM</span>
+      </a>
+    </li>
+    <li>
+      <a class="dropdown-item d-flex justify-content-between" href="#">
+        <span class="w-50">rnl</span>
+        <span class="w-50">RNL</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+            </select>
+            </div>
+           
+          </div>
+
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <label class="label mb-0 w-20">URL:</label>
+            <input class="form-control form-control-sm w-100">
+          </div>
+
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <label class="label w-20 mb1">Database Name:</label>
+            <input class="form-control form-control-sm w-100">
+          </div>
+
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <label class="label mb-0 w-20">Database Username:</label>
+            <input class="form-control w-100" value="sagarpwd">
+          </div>
+
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <label class="label w-20 mb-0">Database Password:</label>
+            <input type="password" class="form-control form-control-sm w-100" value="********">
+          </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-3 d-flex align-items-start justify-content-end px-4">
+        <span class="label">Charity ID: 7343</span>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-1 small text-muted mt-2">
+      &copy; 2025 PG Calc. All rights reserved.
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  
+  <script>
+    const blurOverlay = document.getElementById('dropdownBlurOverlay');
+    const dropdowns = document.querySelectorAll('.dropdown-custom');
+
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('mouseenter', () => {
+        blurOverlay.classList.add('active');
+      });
+      dropdown.addEventListener('mouseleave', () => {
+        blurOverlay.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -29,10 +29,3 @@ tooltipTriggerList.forEach(function (tooltipTriggerEl) {
         showAlert();
       }
     });
-    
-    function showAlert() {
-      document.getElementById('alert').classList.remove('d-none');
-    }
-    function hideAlert() {
-      document.getElementById('alert').classList.add('d-none');
-    }

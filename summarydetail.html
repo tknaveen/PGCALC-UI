@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summary Detail | PG Calc</title>
+  <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/mdi/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="dropdownBlurOverlay" class="blur-overlay"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg full-navbar p-0">
+    <div class="container-fluid p-0 align-items-end position-relative">
+      <div class="d-flex align-items-center toggler-nav position-absolute h-100">
+        <img src="assets/img/logo.png" alt="" class="logo h-100">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="w-100">
+          <!-- Top Row -->
+          <div class="top-row d-flex justify-content-center py-0">
+            <div class="top-row-content d-flex justify-content-between align-items-center px-5 flex-shrink-1">
+              <div class="d-flex gap-4">
+                <span>MULTICLIENTB42 : Administrator 40</span>
+                <span>Last Login : 04 / 17 / 2024
+                  <span class="ms-2">07:20 AM ET</span></span>
+                <span>Latest Product Info</span>
+              </div>
+              <div class="icons d-flex">
+                <span><img src="assets/img/profile.svg" alt=""></span>
+                <span><img src="assets/img/info.svg" alt=""></span>
+                <span><img src="assets/img/log-out.svg" alt=""></span>
+              </div>
+            </div>
+          </div>
+          <!-- Bottom Row -->
+          <div class="bottom-row">
+            <ul class="nav-menu">
+
+              <!-- Actions -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Actions</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Actions</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="LandingPage.html">Person Search</a>
+                      <a href="#">Data Sync</a>
+                      <a href="#">Remainder Search</a>
+                      <a href="#">Gift Search</a>
+                      <a href="#">Add Person / Advisor</a>
+                      <a href="#">Add Gift / Person from File</a>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="dropdown-column">
+                      <a href="#">Maintain Fund / Pool Values</a>
+                      <a href="#">Maintain Historical Gift Values</a>
+                      <a href="#">Copy Gift Values to Historical Table</a>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="dropdown-column">
+                      <a href="#">CashTrac CGA Market Values</a>
+                      <a href="#">Year End Update</a>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="dropdown-column">
+                      <a href="#">Globally Update Seasonal Addresses</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Summaries -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Summaries</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Summaries</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Bequest Summary</a>
+                      <a href="#">Bequest Summary by Designation</a>
+                      <a href="#">Legacy Society Membership</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Person Summary</a>
+                      <a href="#">Prospect Summary</a>
+                      <a href="#">Advisor Summary</a>
+                      <a href="#">Gift Summary</a>
+                      <a href="#">Gift Summary by Designation</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Organization Summary</a>
+                      <a href="#">Pooled Income Fund Summary</a>
+                      <a href="#">Designation Summary</a>
+                      <a href="#">Rating Summary</a>
+                      <a href="#">Officer Summary</a>
+                      <a href="#">Advisor Type Summary</a>
+                      <a href="#">Legacy Society Summary</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Organization Group Summary</a>
+                      <a href="#">Individual / Person Summary</a>
+                      <a href="#">Person Profile</a>
+                      <a href="#">Gift Profile</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Analysis -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Analysis</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Analysis</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Bequest Pipeline</a>
+                      <a href="#">Bequest Transactions</a>
+                      <a href="#">CGA Market Value Transaction Details</a>
+                      <a href="#">Historical Gift Values</a>
+                      <a href="#">Gift Tally</a>
+                      <a href="#">Projected Remainder Amounts</a>
+                      <a href="#">Program Overview and Statistics</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Compliance -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Compliance</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Compliance</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Gift Annuity Reserves - State Method</a>
+                      <a href="#">Gift Annuity Reserves - Custom Method</a>
+                      <a href="#">FASB Liabilities</a>
+                      <a href="#">Reset FDGA Dates/Percentages</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Payments -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Payments</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Payments</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Payment Summary Reports</a>
+                      <a href="#">Checks / Upload</a>
+                      <a href="#">Advices / Files</a>
+                      <a href="#">EFT Summary Reports</a>
+                      <a href="#">EFT Files</a>
+                      <a href="#">Payment Settings</a>
+                      <a href="#">Check Register</a>
+                      <a href="#">Payment Snapshots / Void</a>
+                      <a href="#">Reconcile Payments</a>
+                      <a href="#">Recompute Unitrust Payments</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 1099 Tax -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">1099 Tax</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">1099 Tax</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="1099Tax.html">1099 Summary</a>
+                      <a href="#">Print 1099-R Forms</a>
+                      <a href="#">Create IRS 1099 File / Upload</a>
+                      <a href="#">CGA Tax Summary</a>
+                      <a href="#">Outside Transmitter for 1099 File</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- PIF -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">PIF</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">PIF</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Update to New Period</a>
+                      <a href="#">Unitize New Gifts</a>
+                      <a href="#">Distribute Income</a>
+                      <a href="#">Correct Past Distribution</a>
+                      <a href="#">Compute PIF Market Values</a>
+                      <a href="#">Account Summary</a>
+                      <a href="#">Annual Report</a>
+                      <a href="#">Yearly Rate of Return</a>
+                      <a href="#">Tax Reporting</a>
+                      <a href="#">Tax Withholding Summary</a>
+                      <a href="#">Maintain Fund Tax Data</a>
+                      <a href="#">Import Fund Tax Data</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Tasks -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Tasks</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Tasks</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Dashboard</a>
+                      <a href="#">Maintain Tasks</a>
+                      <a href="#">Task Report</a>
+                      <a href="#">Task Definition</a>
+                      <a href="#">Change Request Report</a>
+                      <a href="#">View Change Requests</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Utilities -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Utilities</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Utilities</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Verify Person and Gift Data</a>
+                      <a href="#">Data Export</a>
+                      <a href="#">Mail Merge Data</a>
+                      <a href="#">Display Record Counts</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Duplicate Validation Report</a>
+                      <a href="#">Move Associations</a>
+                      <a href="#">Individual/Person Maintenance</a>
+                      <a href="#">Individual/Person Address Review</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Global Replace</a>
+                      <a href="#">Move/Combine Organization</a>
+
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Document Search / Upload</a>
+                      <a href="#">Import Cleared Checks</a>
+                      <a href="#">Import Home Addresses</a>
+                      <a href="#">Import Names / Home Addresses</a>
+                      <a href="#">Import Market Values / Account Nums</a>
+                      <a href="#">Import Fund/Pool Values</a>
+                      <a href="#">Review Audit Information</a>
+                      <a href="#">Reset Market Values</a>
+                      <a href="#">Submit Change Request</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Setup -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Setup</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Setup</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Organization</a>
+                      <a href="#">Pooled Income Fund</a>
+                      <a href="#">Designation</a>
+                      <a href="#">Rating</a>
+                      <a href="#">Officer</a>
+                      <a href="#">Advisor Type</a>
+                      <a href="#">Legacy Society</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">State Reserve Percentage</a>
+                      <a href="#">Standard State Reserve Mortality Table</a>
+                      <a href="#">Custom State Reserve Mortality Table</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Organization Groups for Reporting</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="charity-setup.html">Charity Setup</a>
+                      <a href="#">Administrator - User Accounts</a>
+                      <a href="#">Administrator - Unlock/Password Reset</a>
+                      <a href="#">Administrator - Roles</a>
+                      <a href="#">Administrator - Settings/Monitoring</a>
+                      <a href="#">Administrator - License Usage Report</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Charity Setup -->
+  <div class="container-fluid p-0 my-2 my-md-2 container-main">
+    <div class="bg-white rounded-3 shadow-sm overflow-hidden content-box">
+
+      <!-- Charity Setup Title Header -->
+      <div class="d-flex justify-content-between align-items-center px-3 py-1 border-bottom flex-wrap container-head">
+        <div class="d-flex align-items-center gap-2">
+          <h6 class="mb-0"> <i class="mdi mdi-alert-circle i-summary"></i>&nbsp;1099-R Summary pdf zip file and emails
+          </h6>
+        </div>
+        <div class="right-icons d-flex">
+
+          <div class="division border-left-0">
+            <!-- Close -->
+            <a href="LandingPage.html" class="icon-btn" title="Close">
+              <i class="mdi mdi-window-close fs-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="inside-content p-1">
+        <div class="section mb-1">
+          <div class="section-title px-2 m-0">1099-R Summary pdf zip file and emails</div>
+          <div class="sub-card">
+            <div class="row g-2">
+              <div class="col-12 fs-sm">
+                <a href="">
+                  <span>Download 1099-R Summary zip file</span>
+                </a>
+                
+              </div>
+             
+              
+              
+              <!-- <div class="col-12">
+                <button class="btn btn-outline-secondary btn-sm px-4" data-bs-toggle="modal"
+                  data-bs-target="#selectOrganizations">Select</button>
+                   <button class="btn btn-outline-secondary btn-sm px-4" data-bs-toggle="modal"
+                  data-bs-target="#selectOrganizations">Close</button>
+              </div> -->
+              <div class="col-12 text-left mt-3">
+                  <a href="summarydetail-email.html" class="btn btn-primary btn-sm">Continue</a>
+                  <button class="btn btn-outline-secondary btn-sm">Close</button>
+                </div>
+
+            </div>
+            
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-1 small text-muted mt-2">
+    &copy; 2025 PG Calc. All rights reserved.
+  </footer>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="selectOrganizations" tabindex="-1" aria-labelledby="selectOrganizationsLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-3 shadow">
+        <div
+          class="modal-header container-head text-white d-flex justify-content-between align-items-center flex-wrap px-3 py-2">
+          <h6 class="mb-0">Select Organizations</h6>
+          <div class="right-icons d-flex">
+            <div class="division border-left-0">
+              <!-- Help / Close -->
+              <button type="button" class="btn action-btn" title="Help">
+                <i class="mdi mdi-help-circle-outline"></i>
+              </button>
+              <a href="" class="icon-btn" title="Close" data-bs-dismiss="modal">
+                <i class="mdi mdi-window-close fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal-body px-3 py-2">
+
+          <div class="radio-org">
+            <ul>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption" id="o1"
+                      checked=""></span>
+                  <label class="form-check-label label" for="showFull">ALL BEQUEST - ALL BEQUEST Group</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o2"></span>
+                  <label class="form-check-label label" for="showFull">ALL TYPE ORG - All Type Org</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o3"></span>
+                  <label class="form-check-label label" for="showFull">ANANDTEST - anandtest</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o4"></span>
+                  <label class="form-check-label label" for="showFull">BGHBGFH - susii</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o5"></span>
+                  <label class="form-check-label label" for="showFull">BILLS - bills groups</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <hr>
+          </hr>
+
+
+          <div class="radio-org">
+            <ul>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id="" checked=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2 </label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">AMERICAUN - American Union Fdn.1</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">AMERICAU - American Union Fdn.2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">ANDREA> - Andrea test charity/org</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">GLUPLOAD5 - GLUPLOAD Test18</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">AMERICAU - American Union Fdn.2</label>
+                </p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="modal-footer px-3 py-2 border-top text-center d-block">
+          <button type="button" class="btn btn-modal-save btn-sm">Select All</button>
+          <button type="button" class="btn btn-modal-cancel btn-sm" data-bs-dismiss="modal">Clear</button>
+          <button type="button" class="btn btn-modal-save btn-sm">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Attention Modal -->
+  <div class="modal fade" id="attentionModal" tabindex="-1" aria-labelledby="attentionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-3 shadow">
+        <div
+          class="modal-header container-head text-white d-flex justify-content-between align-items-center flex-wrap px-3 py-2">
+          <h6 class="mb-0">Attention</h6>
+          <div class="right-icons d-flex">
+            <div class="division border-left-0">
+              <!-- Help / Close -->
+
+              <a href="" class="icon-btn" title="Close" data-bs-dismiss="modal">
+                <i class="mdi mdi-window-close fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal-body px-3 py-2">
+
+          <div class="attention-details">
+            <p class="fs-sm">The following errors have been found:</p>
+            <ul>
+              <li>
+                <p class="mb-0 fs-sm"><span>1.</span>Organization BUILD 38: Tax Year for forms must be less than the
+                  Organization Year of 2022.</p>
+              </li>
+              <li>
+                <p class="mb-0 fs-sm"><span>2.</span>Organization BUILD 38:Organization Control Code cannot be blank.
+                </p>
+              </li>
+              <li>
+                <p class="mb-0 fs-sm"><span>3.</span>Organization BUILD 38:Transmitter Control Code must be 5
+                  alphanumeric characters.</p>
+              </li>
+              <li>
+                <p class="mb-0 fs-sm"><span>4.</span>If Charity is Transmitter, all Organization address and transmitter
+                  information must match</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-footer px-3 py-2 border-top text-center d-block">
+          <button type="button" class="btn btn-modal-save btn-sm" data-bs-toggle="modal"
+            data-bs-target="#continueModal">continue</button>
+          <button type="button" class="btn btn-modal-save btn-sm">Print Log</button>
+          <button type="button" class="btn btn-modal-save btn-sm">Print To File</button>
+          <button type="button" class="btn btn-modal-cancel btn-sm" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-modal-save btn-sm">Help</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Custom Filter Modal -->
+  <div class="modal fade" id="customFilterModal" tabindex="-1" aria-labelledby="customFilterModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-3 shadow">
+        <div
+          class="modal-header container-head text-white d-flex justify-content-between align-items-center flex-wrap px-3 py-2">
+          <h6 class="mb-0">Custom Filter</h6>
+          <div class="right-icons d-flex">
+            <div class="division border-left-0">
+              <!-- Help / Close -->
+
+              <a href="" class="icon-btn" title="Close" data-bs-dismiss="modal">
+                <i class="mdi mdi-window-close fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal-body px-3 py-2">
+          <div class="row">
+            <div class="col-auto">
+              <div class="division">
+                <!-- Actions -->
+                <button type="button" class="btn action-btn" title="Save">
+                  <i class="mdi mdi-content-save"></i>
+                </button>
+                <button type="button" class="btn action-btn" title="Cancel">
+                  <i class="mdi mdi-cancel"></i>
+                </button>
+                <button type="button" class="btn action-btn" title="delete" data-bs-toggle="modal"
+                  data-bs-target="#customFilterdeleteModal">
+                  <i class="mdi mdi-delete"></i>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <hr>
+          </hr>
+          <div class="row">
+            <div class="col-auto d-flex align-items-center gap-2 mb-2">
+              <div class="form-check p-0 d-flex align-items-center gap-1">
+                <input type="radio" class="form-check-input p-0 m-0" name="new" id="new" checked="">
+                <label class="form-check-label label" for="orgAll">New</label>
+              </div>
+              <div class="form-check d-flex align-items-center gap-1 p-0">
+                <input type="radio" class="form-check-input p-0 m-0" name="new" id="edit">
+                <label class="form-check-label label" for="orgSpecific">Edit</label>
+              </div>
+            </div>
+            <div class="mb-2 d-flex align-items-center gap-2 filtername">
+              <label for="ex-subject" class="label mb-1">Filter Name:</label>
+              <input type="text" id="ex-subject" class="form-control">
+            </div>
+            <div class="mb-2 d-flex align-items-center gap-2 description">
+              <label for="ex-description" class="label mb-1" style="visibility: hidden;">Description:</label>
+              <textarea id="ex-description" rows="4" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Confirm Delete the Custom Filter Modal  -->
+  <div class="modal fade" id="customFilterdeleteModal" tabindex="-1" aria-labelledby="customFilterdeleteModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-3 shadow">
+        <div
+          class="modal-header container-head text-white d-flex justify-content-between align-items-center flex-wrap px-3 py-2">
+          <h6 class="mb-0">Confirm</h6>
+          <div class="right-icons d-flex">
+            <div class="division border-left-0">
+              <!-- Help / Close -->
+
+              <a href="" class="icon-btn" title="Close" data-bs-dismiss="modal">
+                <i class="mdi mdi-window-close fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal-body px-3 py-2">
+          <div class="row">
+            <p class="mb-2">Delete this Record?</p>
+
+            <div class="modal-footer px-3 py-2 border-top text-end d-block">
+              <button type="button" class="btn btn-modal-cancel btn-sm" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-modal-save btn-sm">Ok</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    function showAlert() {
+      document.getElementById('alert').classList.remove('d-none');
+    }
+    function hideAlert() {
+      document.getElementById('alert').classList.add('d-none');
+    }
+
+    const blurOverlay = document.getElementById('dropdownBlurOverlay');
+    const dropdowns = document.querySelectorAll('.dropdown-custom');
+
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('mouseenter', () => {
+        blurOverlay.classList.add('active');
+      });
+      dropdown.addEventListener('mouseleave', () => {
+        blurOverlay.classList.remove('active');
+      });
+    });
+  </script>
+  <script>
+    const mailMerge = document.getElementById('mailMerge');
+    const report1099 = document.getElementById('r1099r');
+    const fileFormat = document.getElementById('fileFormat');
+
+    function toggleFileFormat() {
+      fileFormat.disabled = !mailMerge.checked;
+    }
+
+    mailMerge.addEventListener('change', toggleFileFormat);
+    report1099.addEventListener('change', toggleFileFormat);
+  </script>
+
+
+
+
+
+</body>
+
+</html>
