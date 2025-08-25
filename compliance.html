@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compliance | PG Calc</title>
+  <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/mdi/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="dropdownBlurOverlay" class="blur-overlay"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg full-navbar p-0">
+    <div class="container-fluid p-0 align-items-end position-relative">
+      <div class="d-flex align-items-center toggler-nav position-absolute h-100">
+        <img src="assets/img/logo.png" alt="" class="logo h-100">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="w-100">
+          <!-- Top Row -->
+          <div class="top-row d-flex justify-content-center py-0">
+            <div class="top-row-content d-flex justify-content-between align-items-center px-5 flex-shrink-1">
+              <div class="d-flex gap-4">
+                <span>MULTICLIENTB42 : Administrator 40</span>
+                <span>Last Login : 04 / 17 / 2024
+                  <span class="ms-2">07:20 AM ET</span></span>
+                <span>Latest Product Info</span>
+              </div>
+              <div class="icons d-flex">
+                <span><img src="assets/img/profile.svg" alt=""></span>
+                <span><img src="assets/img/info.svg" alt=""></span>
+                <span><img src="assets/img/log-out.svg" alt=""></span>
+              </div>
+            </div>
+          </div>
+          <!-- Bottom Row -->
+          <div class="bottom-row">
+            <ul class="nav-menu">
+
+              <!-- Actions -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Actions</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Actions</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="LandingPage.html">Person Search</a>
+                      <a href="#">Data Sync</a>
+                      <a href="#">Remainder Search</a>
+                      <a href="#">Gift Search</a>
+                      <a href="#">Add Person / Advisor</a>
+                      <a href="#">Add Gift / Person from File</a>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="dropdown-column">
+                      <a href="#">Maintain Fund / Pool Values</a>
+                      <a href="#">Maintain Historical Gift Values</a>
+                      <a href="#">Copy Gift Values to Historical Table</a>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="dropdown-column">
+                      <a href="#">CashTrac CGA Market Values</a>
+                      <a href="#">Year End Update</a>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="dropdown-column">
+                      <a href="#">Globally Update Seasonal Addresses</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Summaries -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Summaries</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Summaries</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Bequest Summary</a>
+                      <a href="#">Bequest Summary by Designation</a>
+                      <a href="#">Legacy Society Membership</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Person Summary</a>
+                      <a href="#">Prospect Summary</a>
+                      <a href="#">Advisor Summary</a>
+                      <a href="#">Gift Summary</a>
+                      <a href="#">Gift Summary by Designation</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Organization Summary</a>
+                      <a href="#">Pooled Income Fund Summary</a>
+                      <a href="#">Designation Summary</a>
+                      <a href="#">Rating Summary</a>
+                      <a href="#">Officer Summary</a>
+                      <a href="#">Advisor Type Summary</a>
+                      <a href="#">Legacy Society Summary</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Organization Group Summary</a>
+                      <a href="#">Individual / Person Summary</a>
+                      <a href="#">Person Profile</a>
+                      <a href="#">Gift Profile</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Analysis -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Analysis</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Analysis</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Bequest Pipeline</a>
+                      <a href="#">Bequest Transactions</a>
+                      <a href="#">CGA Market Value Transaction Details</a>
+                      <a href="#">Historical Gift Values</a>
+                      <a href="#">Gift Tally</a>
+                      <a href="#">Projected Remainder Amounts</a>
+                      <a href="#">Program Overview and Statistics</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Compliance -->
+              <li class="nav-item dropdown-custom">
+                <a href="compliance.html" class="d-flex gap-2 nav-title">Compliance</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Compliance</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="compliance.html#summaryTab">Gift Annuity Reserves - State Method</a>
+                      <a href="compliance.html#customTab">Gift Annuity Reserves - Custom Method</a>
+                      <a href="#">FASB Liabilities</a>
+                      <a href="#">Reset FDGA Dates/Percentages</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Payments -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Payments</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Payments</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Payment Summary Reports</a>
+                      <a href="#">Checks / Upload</a>
+                      <a href="#">Advices / Files</a>
+                      <a href="#">EFT Summary Reports</a>
+                      <a href="#">EFT Files</a>
+                      <a href="#">Payment Settings</a>
+                      <a href="#">Check Register</a>
+                      <a href="#">Payment Snapshots / Void</a>
+                      <a href="#">Reconcile Payments</a>
+                      <a href="#">Recompute Unitrust Payments</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 1099 Tax -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">1099 Tax</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">1099 Tax</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="1099Tax.html">1099 Summary</a>
+                      <a href="#">Print 1099-R Forms</a>
+                      <a href="#">Create IRS 1099 File / Upload</a>
+                      <a href="#">CGA Tax Summary</a>
+                      <a href="#">Outside Transmitter for 1099 File</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- PIF -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">PIF</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">PIF</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Update to New Period</a>
+                      <a href="#">Unitize New Gifts</a>
+                      <a href="#">Distribute Income</a>
+                      <a href="#">Correct Past Distribution</a>
+                      <a href="#">Compute PIF Market Values</a>
+                      <a href="#">Account Summary</a>
+                      <a href="#">Annual Report</a>
+                      <a href="#">Yearly Rate of Return</a>
+                      <a href="#">Tax Reporting</a>
+                      <a href="#">Tax Withholding Summary</a>
+                      <a href="#">Maintain Fund Tax Data</a>
+                      <a href="#">Import Fund Tax Data</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Tasks -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Tasks</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Tasks</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Dashboard</a>
+                      <a href="#">Maintain Tasks</a>
+                      <a href="#">Task Report</a>
+                      <a href="#">Task Definition</a>
+                      <a href="#">Change Request Report</a>
+                      <a href="#">View Change Requests</a>
+                    </div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                    <div class="dropdown-column"></div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Utilities -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Utilities</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Utilities</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Verify Person and Gift Data</a>
+                      <a href="#">Data Export</a>
+                      <a href="#">Mail Merge Data</a>
+                      <a href="#">Display Record Counts</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Duplicate Validation Report</a>
+                      <a href="#">Move Associations</a>
+                      <a href="#">Individual/Person Maintenance</a>
+                      <a href="#">Individual/Person Address Review</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Global Replace</a>
+                      <a href="#">Move/Combine Organization</a>
+
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Document Search / Upload</a>
+                      <a href="#">Import Cleared Checks</a>
+                      <a href="#">Import Home Addresses</a>
+                      <a href="#">Import Names / Home Addresses</a>
+                      <a href="#">Import Market Values / Account Nums</a>
+                      <a href="#">Import Fund/Pool Values</a>
+                      <a href="#">Review Audit Information</a>
+                      <a href="#">Reset Market Values</a>
+                      <a href="#">Submit Change Request</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Setup -->
+              <li class="nav-item dropdown-custom">
+                <a href="#" class="d-flex gap-2 nav-title">Setup</a>
+                <div class="custom-dropdown mega-dropdown">
+                  <h6 class="text-head">Setup</h6>
+                  <div class="dropdown-inner container">
+                    <div class="dropdown-column">
+                      <a href="#">Organization</a>
+                      <a href="#">Pooled Income Fund</a>
+                      <a href="#">Designation</a>
+                      <a href="#">Rating</a>
+                      <a href="#">Officer</a>
+                      <a href="#">Advisor Type</a>
+                      <a href="#">Legacy Society</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">State Reserve Percentage</a>
+                      <a href="#">Standard State Reserve Mortality Table</a>
+                      <a href="#">Custom State Reserve Mortality Table</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="#">Organization Groups for Reporting</a>
+                    </div>
+                    <div class="dropdown-column">
+                      <a href="charity-setup.html">Charity Setup</a>
+                      <a href="#">Administrator - User Accounts</a>
+                      <a href="#">Administrator - Unlock/Password Reset</a>
+                      <a href="#">Administrator - Roles</a>
+                      <a href="#">Administrator - Settings/Monitoring</a>
+                      <a href="#">Administrator - License Usage Report</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Charity Setup -->
+  <div class="container-fluid p-0 my-2 my-md-2 container-main">
+    <div class="bg-white rounded-3 shadow-sm overflow-hidden content-box">
+
+      <!-- Charity Setup Title Header -->
+      <div class="d-flex justify-content-between align-items-center px-3 py-1 border-bottom flex-wrap container-head">
+        <div class="d-flex align-items-center gap-2">
+          <h6 class="mb-0"><i class="mdi mdi-calculator i-calc"></i>&nbsp;Gift Annuity Reserves </h6>
+        </div>
+        <div class="right-icons d-flex">
+
+
+          <div class="division border-left-0">
+            <!-- Help / Close -->
+            <button type="button" class="btn action-btn" title="Help">
+              <i class="mdi mdi-help-circle-outline"></i>
+            </button>
+            <a href="LandingPage.html" class="icon-btn" title="Close">
+              <i class="mdi mdi-window-close fs-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="inside-content p-1">
+        <div class="section mb-1">
+          <div class="section-title px-2 m-0">Organization</div>
+          <div class="sub-card">
+            <div class="row g-2 align-items-center">
+              <div class="col-auto">
+                <div class="form-check p-0 d-flex align-items-center gap-1">
+                  <input type="radio" class="form-check-input p-0 m-0" name="org" id="orgAll" checked="">
+                  <label class="form-check-label label" for="orgAll">All Orgs</label>
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="form-check d-flex align-items-center gap-1">
+                  <input class="form-check-input m-0 specorg mailMerge" type="radio" name="org" id="specorg">
+                  <label class="form-check-label label" for="specorg">Specific Org</label>
+                </div>
+              </div>
+              <div class="col-auto d-flex align-items-center gap-2 w-20" style="white-space: nowrap;">
+                <!-- <label class="label mb-0">File Format:</label> -->
+                <select class="form-select form-select-sm fileFormat" id="fileFormat" disabled="">
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+              <div class="col-auto">
+                <div class="form-check d-flex align-items-center gap-1 p-0">
+                  <input type="radio" class="form-check-input p-0 m-0" name="org" id="orgSelected">
+                  <label class="form-check-label label" for="orgSelected">Selected Orgs</label>
+                </div>
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-outline-secondary btn-sm px-4" data-bs-toggle="modal"
+                  data-bs-target="#selectOrganizations">Select</button>
+              </div>
+              <div class="col-6 fs-sm">
+                <p class="mb-0"></p>
+              </div>
+
+            </div>
+            <div class="row g-2 align-items-center break-page-detail">
+              <div class="col-12 d-flex justify-content-start">
+                <div class="form-check form-check-inline d-flex align-items-center gap-2 p-0">
+                  <label class="label mb-0 fs-sm" for="breakPage">Break Page Between Organizations</label>
+                  <input class="form-check-input m-0" type="checkbox" id="breakPage">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabs Section -->
+        <div class="section mb-1">
+          <div class="sub-card">
+            <ul class="nav nav-tabs" id="taxTabs" role="tablist">
+              <li class="nav-item pee-1" role="presentation">
+                <a class="nav-link active" data-bs-toggle="tab" href="#summaryTab" data-bs-target="#summaryTab"
+                  type="button" aria-selected="true" role="tab">
+                  State Method</a>
+              </li>
+              <li class="nav-item pee-1" role="presentation">
+                <a class="nav-link" data-bs-toggle="tab" href="#customTab" data-bs-target="#customTab" type="button"
+                  aria-selected="false" role="tab" tabindex="-1">Custom Method</a>
+              </li>
+              <!-- <li class="nav-item pee-1" role="presentation">
+                <a class="nav-link" data-bs-toggle="tab" href="#uploadTab" aria-selected="false" tabindex="-1"
+                  role="tab">Create IRS 1099 File / Upload File</a>
+              </li> -->
+            </ul>
+            <div class="tab-content p-1 border border-top-0" style="background:#fff">
+              <div class="tab-pane fade active show" id="summaryTab" role="tabpanel">
+
+                <!-- Annuity Pool and Valuation Date -->
+                <div class="row g-1">
+                  <div class="col-md-6">
+                    <div class="section mb-1">
+                      <div class="section-title px-2 m-0">Annuity Pool</div>
+                      <div class="sub-card d-flex gap-1">
+                        <div class="col-auto">
+                          <div class="form-check form-check-inline d-flex align-items-center gap-2 p-0">
+                            <input type="radio" class="form-check-input p-0 m-0" name="Pools" checked="">
+                            <label class="form-check-label label" for="orgAll">All Pools</label>
+                          </div>
+                        </div>
+
+                        <div class="col-auto">
+                          <div class="form-check form-check-inline d-flex align-items-center gap-2 p-0 m-0">
+                            <input class="form-check-input m-0 mailMerge" type="radio" name="Pools" id="mailMerge">
+                            <label class="form-check-label label" for="mailMerge">Specific Pool</label>
+                          </div>
+                        </div>
+                        <div class="col-auto d-flex align-items-center gap-2 w-30" style="white-space: nowrap;">
+                          <!-- <label class="label mb-0">File Format:</label> -->
+                          <select class="form-select form-select-sm fileFormat" id="fileFormat" disabled="">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="section mb-1">
+                      <div class="section-title px-2 m-0">Valuation Date</div>
+                      <div class="sub-card row g-2 align-items-center">
+                        <div class="col-8 d-flex align-items-center gap-2">
+                          <label class="label mb-0 w-50">Valuation Date:</label>
+                          <input type="date" id="date" class="form-control form-control-sm" value="2024">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Gift-Include/Exclude/Suppress -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Gifts to Include</div>
+                  <div class="sub-card">
+                    <div class="row mx-0">
+                      <div class="col-6 p-0">
+                        <div class="form-check p-0 d-flex align-items-center gap-1">
+                          <input class="form-check-input p-0 m-0" type="radio" name="CGAs" id="showFull"
+                            checked="">
+                          <label class="form-check-label label" for="showFull">All CGAs</label>
+                        </div>
+                        <div
+                          class="form-check p-0 d-flex align-items-center justify-content-start gap-2 gift-radio-label">
+                          <div class="form-check p-0 d-flex align-items-center gap-1">
+                            <input class="form-check-input p-0 m-0" type="radio" name="CGAs" id="show1099Only">
+                            <label class="form-check-label label" for="show1099Only">Only CGAs with Reserve State
+                              of</label>
+                          </div>
+
+                          <div class="col-auto d-flex align-items-center gap-2 w-50" style="white-space: nowrap;">
+                            <!-- <label class="label mb-0">File Format:</label> -->
+                            <div class="select-wrap w-50">
+                              <!-- Example: repeat this block as many times as you want -->
+                              <div class="dropdown custom-select-dropdown w-100" data-bs-display="static">
+                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle w-100" type="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="selected-text">Select...</span>
+                                </button>
+
+                                <ul class="dropdown-menu w-100" style="z-index:9999;">
+                                  <li class="dropdown-header d-flex justify-content-between px-3">
+                                    <span style="width:75px">Name</span>
+                                    <span>Description</span>
+                                  </li>
+
+                                  <!-- use BUTTON elements for items (no href="#" jumps) -->
+                                  <li>
+                                    <button class="dropdown-item d-flex justify-content-between" type="button"
+                                      data-value="AK">
+                                      <span style="width:75px">AK</span>
+                                      <span>Alaska</span>
+                                    </button>
+                                  </li>
+
+                                  <li>
+                                    <button class="dropdown-item d-flex justify-content-between" type="button"
+                                      data-value="AL">
+                                      <span style="width:75px">AL</span>
+                                      <span>Alabama</span>
+                                    </button>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- repeat block end -->
+
+                            </div>
+
+
+
+                          </div>
+                        </div>
+
+                        <div
+                          class="form-check p-0 d-flex align-items-center justify-content-start gap-2 gift-radio-label">
+                          <div class="form-check p-0 d-flex align-items-center gap-1">
+                            <input class="form-check-input p-0 m-0" type="radio" name="CGAs"
+                              id="showSubtotals">
+                            <label class="form-check-label label" for="showSubtotals">All CGAs except those with Reserve
+                              State of</label>
+                          </div>
+
+                          <div class="col-auto d-flex align-items-center gap-2 w-50" style="white-space: nowrap;">
+                            <!-- <label class="label mb-0">File Format:</label> -->
+                            <div class="select-wrap w-50">
+                              <div class="dropdown custom-select-dropdown w-100" data-bs-display="static">
+                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle w-100" type="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="selected-text">Select...</span>
+                                </button>
+                                <ul class="dropdown-menu w-100" style="z-index: 9999;">
+                                  <li class="dropdown-header d-flex justify-content-between">
+                                    <span>Name</span>
+                                    <span>Description</span>
+                                  </li>
+                                  <li>
+                                    <button class="dropdown-item d-flex justify-content-between" type="button"
+                                      data-value="AK">
+                                      <span>AK</span>
+                                      <span>Alaska</span>
+                                    </button>
+                                  </li>
+                                  <li>
+                                    <button class="dropdown-item d-flex justify-content-between" type="button"
+                                      data-value="AL">
+                                      <span>AL</span>
+                                      <span>Alabama</span>
+                                    </button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 px-2">
+                        <div class="d-flex align-items-center mb-1">
+                          <label class="label mb-0 w-60" for="excludeStatus">Exclude Reinsured Gifts:</label>
+                          <input class="form-check-input m-0" type="checkbox" id="excludeStatus">
+                        </div>
+                        <div class="d-flex align-items-center mb-1">
+                          <label class="label mb-0 w-60" for="excludeGifts">Calculate commuted CGAs based on Term End
+                            Date<br>
+                            (if payments have been commuted):</label>
+                          <input class="form-check-input m-0" type="checkbox" id="excludeGifts">
+                        </div>
+                        <!-- <div class="d-flex align-items-center">
+                          <label class="label mb-0 w-50" for="saveZip">Save pdf files to zip file</label>
+                          <input class="form-check-input m-0" type="checkbox" id="saveZip">
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Calculation Methodology in Accordance with Which States and Surplus to Show at End of Report  -->
+                <div class="row g-1">
+                  <div class="col-md-6">
+                    <div class="section mb-1">
+                      <div class="section-title px-2 m-0">Calculation Methodology in Accordance with Which States</div>
+                      <div class="sub-card py-1 calc-sub-card">
+                        <div class="row align-items-center g-2 flex-wrap px-5">
+                          <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                            <label class="mb-0 fs-sm">AR</label>
+                            <input class="form-check-input m-0" type="checkbox" checked="">
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                            <label class="mb-0 fs-sm">FL</label>
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                            <label class="mb-0 fs-sm">MD</label>
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                            <label class="mb-0 fs-sm">NY</label>
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                            <label class="mb-0 fs-sm">WA</label>
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                            <label class="mb-0 fs-sm">Wi</label>
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                            <label class="mb-0 fs-sm">CA</label>
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                            <label class="mb-0 fs-sm">HI</label>
+                            <input class="form-check-input m-0" type="checkbox">
+                          </div>
+                          <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                            <label class="mb-0 fs-sm">NJ</label>
+                            <input class="form-check-input m-0" type="checkbox">
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">OR</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="section mb-1">
+                      <div class="section-title px-2 m-0">Surplus to Show at End of Report</div>
+                      <div class="sub-card row g-2 align-items-center">
+                        <div class="col-8 align-items-center gap-2">
+                          <div class="form-check p-0 d-flex align-items-center gap-1">
+                            <input class="form-check-input p-0 m-0" type="radio" name="Reserve" id="showFull"
+                              checked="">
+                            <label class="form-check-label label" for="showFull">None</label>
+                          </div>
+                          <div
+                            class="form-check p-0 d-flex align-items-center justify-content-start gap-2 Surplus-radio-label">
+                            <div class="form-check p-0 d-flex align-items-center gap-1">
+                              <input class="form-check-input p-0 m-0" type="radio" name="Reserve"
+                                id="show1099Only">
+                              <label class="form-check-label label" for="show1099Only">Percentage of Total
+                                Reserve</label>
+                            </div>
+
+                            <div class="col-auto d-flex align-items-center gap-2 w-20" style="white-space: nowrap;">
+                              <!-- <label class="label mb-0">File Format:</label> -->
+                              <div class="col-auto">
+                                <input type="text" class="form-control form-control-sm">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="form-check p-0 d-flex align-items-center justify-content-start gap-2 Surplus-radio-label">
+                            <div class="form-check p-0 d-flex align-items-center gap-1">
+                              <input class="form-check-input p-0 m-0" type="radio" name="Reserve"
+                                id="showSubtotals">
+                              <label class="form-check-label label" for="showSubtotals">Specific Dollar Amount</label>
+                            </div>
+
+                            <div class="col-auto d-flex align-items-center gap-2 w-20" style="white-space: nowrap;">
+                              <!-- <label class="label mb-0">File Format:</label> -->
+                              <div class="col-auto">
+                                <input type="text" class="form-control form-control-sm">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <!-- Person Key(s) -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Gift Key(s)</div>
+                  <div class="sub-card row g-2 align-items-center gap-4">
+                    <div class="col-auto">
+                      <div class="form-check d-flex align-items-center gap-1 p-0">
+                        <input class="form-check-input p-0 m-0" type="radio" name="Keys" id="keyNone" checked="">
+                        <label class="form-check-label label" for="keyNone">No Selection by Key</label>
+                      </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-1">
+                      <input class="form-check-input p-0 m-0" type="radio" name="Keys" id="keyList">
+                      <label class="form-check-label label" for="keyList">Key or List of Keys (example:
+                        1,2,5):</label>
+                      <input class="form-control form-control-sm">
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-1">
+                      <input class="form-check-input p-0 m-0" type="radio" name="Keys" id="keyRange">
+                      <label class="form-check-label label" for="keyRange">Range of Keys:</label>
+                      <input class="form-control form-control-sm" placeholder="From">
+                      <input class="form-control form-control-sm" placeholder="To">
+                    </div>
+                  </div>
+                </div>
+
+                <!--Group/Suppress Include/Exclude/Suppress -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Group/Suppress</div>
+                  <div class="sub-card">
+                    <div class="row mx-0">
+                      <div class="col-6 p-0">
+                        <div class="form-check p-0 d-flex align-items-center gap-1">
+                          <input class="form-check-input p-0 m-0" type="radio" name="Suppress" id="showFull"
+                            checked="">
+                          <label class="form-check-label label" for="showFull">Show Full Report Detail</label>
+                        </div>
+                        <div
+                          class="form-check p-0 d-flex align-items-center justify-content-start gap-2 gift-radio-label">
+                          <div class="form-check p-0 d-flex align-items-center gap-1">
+                            <input class="form-check-input p-0 m-0" type="radio" name="Suppress" id="show1099Only">
+                            <label class="form-check-label label" for="show1099Only">Show Only Mortality/Interest
+                              Subtotals and Grand Totals</label>
+                          </div>
+
+
+                        </div>
+
+                      </div>
+                      <div class="col-6 px-2">
+                        <div class="d-flex align-items-center mb-1">
+                          <label class="label mb-0 w-50" for="excludeStatus">Group by Mortality Table and Interest
+                            Rate:</label>
+                          <input class="form-check-input m-0" type="checkbox" id="excludeStatus">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Custom Filter -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Custom Filter</div>
+                  <div class="sub-card">
+                    <div class="row g-1">
+                      <!-- Left Column: Dropdown + Button -->
+                      <div class="col-md-3 d-flex flex-column">
+                        <select class="form-select form-select-sm mb-1">
+                          <option>custom1</option>
+                          <option>custom2</option>
+                          <option>custom3</option>
+                          <option>custom5</option>
+                          <option>CUSTOM TEST</option>
+                          <option>EFR 1</option>
+                          <option>EFR 123</option>
+                        </select>
+                        <button class="btn btn-outline-secondary btn-sm w-75 py-1 px-2" data-bs-toggle="modal"
+                          data-bs-target="#customFilterModal">Save as Custom Filter</button>
+                      </div>
+
+                      <!-- Right Column: Textarea -->
+                      <div class="col-md-9">
+                        <textarea class="form-control form-control-sm" rows="3"
+                          style="height: 100%; min-height: 65px;"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Report -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Report</div>
+                  <div class="sub-card row g-2 align-items-center">
+                    <div class="col-md-6 d-flex align-items-center gap-2">
+                      <label class="label mb-0">Report Format:</label>
+                      <select class="form-select form-select-sm w-30">
+                        <option>State Reserves</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sort -->
+                <div class="section mb-1 sort">
+                  <div class="section-title px-2 m-0">Sort</div>
+                  <div class="sub-card row g-2 align-items-center">
+                    <div class="col-md-4 d-flex align-items-center gap-2">
+                      <label class="label mb-0 w-30">Within Organization Sort by: </label>
+                      <select class="form-select form-select-sm">
+                        <option>Gift Date</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-center gap-2">
+                      <label class="label mb-0 w-50">Then By: </label>
+                      <select class="form-select form-select-sm">
+                        <option>Gift Key</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Display Option -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Display Option</div>
+                  <div class="sub-card d-flex gap-1">
+                    <div class="form-check form-check-inline d-flex gap-1 align-items-center p-0">
+                      <input class="form-check-input p-0 m-0" type="radio" name="displayOption" id="displayViewer"
+                        checked="">
+                      <label class="form-check-label label" for="displayViewer">Report Viewer</label>
+                    </div>
+                    <div class="form-check form-check-inline d-flex gap-1 align-items-center p-0">
+                      <input class="form-check-input p-0 m-0" type="radio" name="displayOption" id="displayPDF">
+                      <label class="form-check-label label" for="displayPDF">PDF</label>
+                    </div>
+                    <div class="form-check form-check-inline d-flex gap-1 align-items-center p-0">
+                      <input class="form-check-input p-0 m-0" type="radio" name="displayOption" id="displayRaw">
+                      <label class="form-check-label label" for="displayRaw">Raw Data</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer Buttons -->
+                <div class="text-center mt-1">
+                  <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#attentionModal">OK</button>
+                  <button class="btn btn-outline-secondary btn-sm">Close</button>
+                </div>
+
+              </div>
+
+
+
+
+
+
+
+              <div class="tab-pane fade custom-method" id="customTab" role="tabpanel">
+                <!-- Annuity Pool and Valuation Date -->
+                <div class="row g-1">
+                  <div class="col-md-6">
+                    <div class="section mb-1">
+                      <div class="section-title px-2 m-0">Annuity Pool</div>
+                      <div class="sub-card d-flex gap-1">
+                        <div class="col-auto">
+                          <div class="form-check form-check-inline d-flex align-items-center gap-2 p-0">
+                            <input type="radio" class="form-check-input p-0 m-0" name="org1" checked="">
+                            <label class="form-check-label label" for="orgAll">All Pools</label>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="form-check form-check-inline d-flex align-items-center gap-2 p-0 m-0">
+                            <input class="form-check-input m-0 mailMerge" type="radio" name="org1" id="mailMerge">
+                            <label class="form-check-label label" for="mailMerge">Specific Pool</label>
+                          </div>
+                        </div>
+                        <div class="col-auto d-flex align-items-center gap-2 w-30" style="white-space: nowrap;">
+                          <!-- <label class="label mb-0">File Format:</label> -->
+                          <select class="form-select form-select-sm fileFormat" id="fileFormat" disabled="">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="section mb-1">
+                      <div class="section-title px-2 m-0">Valuation Date</div>
+                      <div class="sub-card row g-2 align-items-center">
+                        <div class="col-8 d-flex align-items-center gap-2">
+                          <label class="label mb-0 w-50">Valuation Date:</label>
+                          <input type="date" id="date" class="form-control form-control-sm" value="2024">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Gift-Include/Exclude/Suppress -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Gifts to Include</div>
+                  <div class="sub-card">
+                    <div class="row mx-0 align-items-end justify-content-end">
+                      <div class="col-6 p-0">
+                        <div class="form-check p-0 d-flex align-items-center gap-1">
+                          <input class="form-check-input p-0 m-0" type="radio" name="ginclude" id="showFull"
+                            checked="">
+                          <label class="form-check-label label" for="showFull">All CGAs</label>
+                        </div>
+                        <div
+                          class="form-check p-0 d-flex align-items-center justify-content-start gap-2 gift-radio-label">
+                          <div class="form-check p-0 d-flex align-items-center gap-1">
+                            <input class="form-check-input p-0 m-0 mailMerge" type="radio" name="ginclude" id="show1099Only">
+                            <label class="form-check-label label" for="show1099Only">Only CGAs with Reserve State
+                              of</label>
+                          </div>
+
+                          <div class="col-auto d-flex align-items-center gap-2 w-20" style="white-space: nowrap;">
+                            <!-- <label class="label mb-0">File Format:</label> -->
+                            <select class="form-select form-select-sm fileFormat" id="fileFormat" disabled="">
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div
+                          class="form-check p-0 d-flex align-items-center justify-content-start gap-2 gift-radio-label">
+                          <div class="form-check p-0 d-flex align-items-center gap-1">
+                            <input class="form-check-input p-0 m-0 mailMerge" type="radio" name="ginclude"
+                              id="showSubtotals">
+                            <label class="form-check-label label" for="showSubtotals">All CGAs except those with Reserve
+                              State of</label>
+                          </div>
+
+                          <div class="col-auto d-flex align-items-center gap-2 w-20" style="white-space: nowrap;">
+                            <!-- <label class="label mb-0">File Format:</label> -->
+                            <select class="form-select form-select-sm" id="fileFormat" disabled="">
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-6 px-2">
+                        <div class="d-flex align-items-center mb-1 exclude-reinsured">
+                          <label class="label mb-0" for="excludeStatus">Exclude Reinsured Gifts:</label>
+                          <input class="form-check-input m-0" type="checkbox" id="excludeStatus">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mortality Table  -->
+                <div class="row g-1">
+                  <div class="col-md-12">
+                    <div class="section mb-1">
+                      <div class="section-title px-2 m-0">Mortality Table</div>
+                      <div class="morality">
+                        <div class="col-6 sub-card row g-2 align-items-center">
+                          <div class="col-8 align-items-center gap-2">
+                            <div
+                              class="form-check p-0 d-flex align-items-center justify-content-start gap-2 Surplus-radio-label">
+                              <div class="form-check p-0 d-flex align-items-center gap-1 specify-table">
+                                <input class="form-check-input p-0 m-0 mailMerge" type="radio" name="Mortality" id="showFull"
+                                  checked="">
+                                <label class="form-check-label label" for="showFull">Specify Table</label>
+                              </div>
+                              <div class="col-auto d-flex align-items-center gap-2 w-30" style="white-space: nowrap;">
+                                <!-- <label class="label mb-0">File Format:</label> -->
+                                <select class="form-select form-select-sm" id="fileFormat" disabled="">
+                                  <option>1983 Basic</option>
+                                  <option>1937 Standard</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div
+                              class="form-check p-0 d-flex align-items-center justify-content-start gap-2 Surplus-radio-label">
+                              <div class="form-check p-0 d-flex align-items-center gap-1">
+                                <input class="form-check-input p-0 m-0" type="radio" name="Mortality"
+                                  id="show1099Only">
+                                <label class="form-check-label label" for="show1099Only">Use Standard Tables Based on
+                                  State and Gift Date</label>
+                              </div>
+
+
+                            </div>
+
+                            <div
+                              class="form-check p-0 d-flex align-items-center justify-content-start gap-2 Surplus-radio-label">
+                              <div class="form-check p-0 d-flex align-items-center gap-1">
+                                <input class="form-check-input p-0 m-0" type="radio" name="Mortality"
+                                  id="showSubtotals">
+                                <label class="form-check-label label" for="showSubtotals">Use Custom Tables Based on
+                                  State and Gift Date</label>
+                              </div>
+
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 sub-card py-1">
+                          <div class="row align-items-center g-2 flex-wrap px-5">
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">AR</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">FL</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">MD</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">NY</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">WA</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">Wi</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">CA</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">HI</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">NJ</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                              <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                                <label class="mb-0 fs-sm">OR</label>
+                                <input class="form-check-input m-0" type="checkbox">
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Interest Rates  -->
+                <div class="row g-1">
+                  <div class="col-md-12">
+                    <div class="section mb-1">
+                      <div class="section-title px-2 m-0">Interest Rates</div>
+                      <div class="interestRates">
+                        <div class="col-6 sub-card row g-2 align-items-center">
+                          <div class="col-8 align-items-center gap-2">
+                            <div
+                              class="form-check p-0 d-flex align-items-center justify-content-start gap-2 Surplus-radio-label">
+                              <div class="form-check p-0 d-flex align-items-center gap-1 rateofReturn">
+                                <input class="form-check-input p-0 m-0 mailMerge" type="radio" name="Interest" id="showFull"
+                                  checked="">
+                                <label class="form-check-label label" for="showFull">Use One Rate of Return </label>
+                              </div>
+                              <div class="col-auto">
+                                <input type="text" class="form-control form-control-sm">
+                              </div>
+                            </div>
+                            <div
+                              class="form-check p-0 d-flex align-items-center justify-content-start gap-2 Surplus-radio-label">
+                              <div class="form-check p-0 d-flex align-items-center gap-1">
+                                <input class="form-check-input p-0 m-0" type="radio" name="Interest"
+                                  id="show1099Only">
+                                <label class="form-check-label label" for="show1099Only">Use Rates that Comply with the
+                                  Following States</label>
+                              </div>
+
+
+                            </div>
+
+                            <div
+                              class="form-check p-0 d-flex align-items-center justify-content-start gap-2 Surplus-radio-label">
+                              <div class="form-check p-0 d-flex align-items-center gap-1">
+                                <input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                                  id="showSubtotals">
+                                <label class="form-check-label label" for="showSubtotals">Use Each Gift's IRS Discount
+                                  Rate</label>
+                              </div>
+
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 sub-card py-1">
+                          <div class="row align-items-center g-2 flex-wrap px-5">
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">AR</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">FL</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">MD</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">NY</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">WA</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">Wi</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">CA</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">HI</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                            </div>
+                            <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                              <label class="mb-0 fs-sm">NJ</label>
+                              <input class="form-check-input m-0" type="checkbox">
+                              <div class="col-auto d-flex align-items-center gap-2 pe-3">
+                                <label class="mb-0 fs-sm">OR</label>
+                                <input class="form-check-input m-0" type="checkbox">
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Person Key(s) -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Gift Key(s)</div>
+                  <div class="sub-card row g-2 align-items-center gap-4">
+                    <div class="col-auto">
+                      <div class="form-check d-flex align-items-center gap-1 p-0">
+                        <input class="form-check-input p-0 m-0" type="radio" name="keyOption" id="keyNone" checked="">
+                        <label class="form-check-label label" for="keyNone">No Selection by Key</label>
+                      </div>
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-1">
+                      <input class="form-check-input p-0 m-0" type="radio" name="keyOption" id="keyList">
+                      <label class="form-check-label label" for="keyList">Key or List of Keys (example:
+                        1,2,5):</label>
+                      <input class="form-control form-control-sm">
+                    </div>
+                    <div class="col-auto d-flex align-items-center gap-1">
+                      <input class="form-check-input p-0 m-0" type="radio" name="keyOption" id="keyRange">
+                      <label class="form-check-label label" for="keyRange">Range of Keys:</label>
+                      <input class="form-control form-control-sm" placeholder="From">
+                      <input class="form-control form-control-sm" placeholder="To">
+                    </div>
+                  </div>
+                </div>
+
+                <!--Group/Suppress Include/Exclude/Suppress -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Group/Suppress</div>
+                  <div class="sub-card">
+                    <div class="row mx-0">
+                      <div class="col-6 p-0">
+                        <div class="form-check p-0 d-flex align-items-center gap-1">
+                          <input class="form-check-input p-0 m-0" type="radio" name="Group/Suppress" id="showFull"
+                            checked="">
+                          <label class="form-check-label label" for="showFull">Show Full Report Detail</label>
+                        </div>
+                        <div
+                          class="form-check p-0 d-flex align-items-center justify-content-start gap-2 gift-radio-label">
+                          <div class="form-check p-0 d-flex align-items-center gap-1">
+                            <input class="form-check-input p-0 m-0" type="radio" name="Group/Suppress" id="show1099Only">
+                            <label class="form-check-label label" for="show1099Only">Show Only Mortality/Interest
+                              Subtotals and Grand Totals</label>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-6 px-5">
+                        <div class="d-flex align-items-center mb-1">
+                          <label class="label mb-0 w-60" for="excludeStatus">Group by Mortality Table and Interest
+                            Rate:</label>
+                          <input class="form-check-input m-0" type="checkbox" id="excludeStatus">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Custom Filter -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Custom Filter</div>
+                  <div class="sub-card">
+                    <div class="row g-1">
+                      <!-- Left Column: Dropdown + Button -->
+                      <div class="col-md-3 d-flex flex-column">
+                        <select class="form-select form-select-sm mb-1">
+                          <option>custom1</option>
+                          <option>custom2</option>
+                          <option>custom3</option>
+                          <option>custom5</option>
+                          <option>CUSTOM TEST</option>
+                          <option>EFR 1</option>
+                          <option>EFR 123</option>
+                        </select>
+                        <button class="btn btn-outline-secondary btn-sm w-75 py-1 px-2" data-bs-toggle="modal"
+                          data-bs-target="#customFilterModal">Save as Custom Filter</button>
+                      </div>
+
+                      <!-- Right Column: Textarea -->
+                      <div class="col-md-9">
+                        <textarea class="form-control form-control-sm" rows="3"
+                          style="height: 100%; min-height: 65px;"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Report -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Report</div>
+                  <div class="sub-card row g-2 align-items-center">
+                    <div class="col-md-6 d-flex align-items-center gap-2">
+                      <label class="label mb-0">Report Format:</label>
+                      <select class="form-select form-select-sm w-30">
+                        <option>State Reserves</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sort -->
+                <div class="section mb-1 sort">
+                  <div class="section-title px-2 m-0">Sort</div>
+                  <div class="sub-card row g-2 align-items-center">
+                    <div class="col-md-4 d-flex align-items-center gap-2">
+                      <label class="label mb-0 w-30">Within Organization Sort by: </label>
+                      <select class="form-select form-select-sm">
+                        <option>Gift Date</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-center gap-2">
+                      <label class="label mb-0 w-50">Then By: </label>
+                      <select class="form-select form-select-sm">
+                        <option>Gift Key</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Display Option -->
+                <div class="section mb-1">
+                  <div class="section-title px-2 m-0">Display Option</div>
+                  <div class="sub-card d-flex gap-1">
+                    <div class="form-check form-check-inline d-flex gap-1 align-items-center p-0">
+                      <input class="form-check-input p-0 m-0" type="radio" name="displayOption" id="displayViewer"
+                        checked="">
+                      <label class="form-check-label label" for="displayViewer">Report Viewer</label>
+                    </div>
+                    <div class="form-check form-check-inline d-flex gap-1 align-items-center p-0">
+                      <input class="form-check-input p-0 m-0" type="radio" name="displayOption" id="displayPDF">
+                      <label class="form-check-label label" for="displayPDF">PDF</label>
+                    </div>
+                    <div class="form-check form-check-inline d-flex gap-1 align-items-center p-0">
+                      <input class="form-check-input p-0 m-0" type="radio" name="displayOption" id="displayRaw">
+                      <label class="form-check-label label" for="displayRaw">Raw Data</label>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <!-- Footer Buttons -->
+                <div class="text-center mt-1">
+                  <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                    data-bs-target="#attentionModal">OK</button>
+                  <button class="btn btn-outline-secondary btn-sm">Close</button>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-1 small text-muted mt-2">
+    &copy; 2025 PG Calc. All rights reserved.
+  </footer>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="selectOrganizations" tabindex="-1" aria-labelledby="selectOrganizationsLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-3 shadow">
+        <div
+          class="modal-header container-head text-white d-flex justify-content-between align-items-center flex-wrap px-3 py-2">
+          <h6 class="mb-0">Select Organizations</h6>
+          <div class="right-icons d-flex">
+            <div class="division border-left-0">
+              <!-- Help / Close -->
+              <button type="button" class="btn action-btn" title="Help">
+                <i class="mdi mdi-help-circle-outline"></i>
+              </button>
+              <a href="" class="icon-btn" title="Close" data-bs-dismiss="modal">
+                <i class="mdi mdi-window-close fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal-body px-3 py-2">
+
+          <div class="radio-org">
+            <ul>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption" id="o1"
+                      checked=""></span>
+                  <label class="form-check-label label" for="showFull">ALL BEQUEST - ALL BEQUEST Group</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o2"></span>
+                  <label class="form-check-label label" for="showFull">ALL TYPE ORG - All Type Org</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o3"></span>
+                  <label class="form-check-label label" for="showFull">ANANDTEST - anandtest</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o4"></span>
+                  <label class="form-check-label label" for="showFull">BGHBGFH - susii</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o5"></span>
+                  <label class="form-check-label label" for="showFull">BILLS - bills groups</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input p-0 m-0" type="radio" name="includeOption"
+                      id="o6"></span>
+                  <label class="form-check-label label" for="showFull">BTNTEST - BTN Test</label>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <hr>
+          </hr>
+
+
+          <div class="radio-org">
+            <ul>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id="" checked=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2 </label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">1ATEST2 - 1ATESTCHARITY2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">AMERICAUN - American Union Fdn.1</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">AMERICAU - American Union Fdn.2</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">ANDREA> - Andrea test charity/org</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">GLUPLOAD5 - GLUPLOAD Test18</label>
+                </p>
+              </li>
+              <li>
+                <p class="mb-0"><span><input class="form-check-input m-0" type="checkbox" id=""></span>
+                  <label class="form-check-label label" for="showFull">AMERICAU - American Union Fdn.2</label>
+                </p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="modal-footer px-3 py-2 border-top text-center d-block">
+          <button type="button" class="btn btn-modal-save btn-sm">Select All</button>
+          <button type="button" class="btn btn-modal-cancel btn-sm" data-bs-dismiss="modal">Clear</button>
+          <button type="button" class="btn btn-modal-save btn-sm">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Attention Modal -->
+  <div class="modal fade" id="attentionModal" tabindex="-1" aria-labelledby="attentionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-3 shadow">
+        <div
+          class="modal-header container-head text-white d-flex justify-content-between align-items-center flex-wrap px-3 py-2">
+          <h6 class="mb-0">Attention</h6>
+          <div class="right-icons d-flex">
+            <div class="division border-left-0">
+              <!-- Help / Close -->
+
+              <a href="" class="icon-btn" title="Close" data-bs-dismiss="modal">
+                <i class="mdi mdi-window-close fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal-body px-3 py-2">
+
+          <div class="attention-details">
+            <p class="fs-sm">The following errors have been found:</p>
+            <ul>
+              <li>
+                <p class="mb-0 fs-sm"><span>1.</span>Organization BUILD 38: Tax Year for forms must be less than the
+                  Organization Year of 2022.</p>
+              </li>
+              <li>
+                <p class="mb-0 fs-sm"><span>2.</span>Organization BUILD 38:Organization Control Code cannot be blank.
+                </p>
+              </li>
+              <li>
+                <p class="mb-0 fs-sm"><span>3.</span>Organization BUILD 38:Transmitter Control Code must be 5
+                  alphanumeric characters.</p>
+              </li>
+              <li>
+                <p class="mb-0 fs-sm"><span>4.</span>If Charity is Transmitter, all Organization address and
+                  transmitter
+                  information must match</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-footer px-3 py-2 border-top text-center d-block">
+          <button type="button" class="btn btn-modal-save btn-sm">continue</button>
+          <button type="button" class="btn btn-modal-save btn-sm">Print Log</button>
+          <button type="button" class="btn btn-modal-save btn-sm">Print To File</button>
+          <button type="button" class="btn btn-modal-cancel btn-sm" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-modal-save btn-sm">Help</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Custom Filter Modal -->
+  <div class="modal fade" id="customFilterModal" tabindex="-1" aria-labelledby="customFilterModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-3 shadow">
+        <div
+          class="modal-header container-head text-white d-flex justify-content-between align-items-center flex-wrap px-3 py-2">
+          <h6 class="mb-0">Custom Filter</h6>
+          <div class="right-icons d-flex">
+            <div class="division border-left-0">
+              <!-- Help / Close -->
+
+              <a href="" class="icon-btn" title="Close" data-bs-dismiss="modal">
+                <i class="mdi mdi-window-close fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal-body px-3 py-2">
+          <div class="row">
+            <div class="col-auto">
+              <div class="division">
+                <!-- Actions -->
+                <button type="button" class="btn action-btn" title="Save">
+                  <i class="mdi mdi-content-save"></i>
+                </button>
+                <button type="button" class="btn action-btn" title="Cancel">
+                  <i class="mdi mdi-cancel"></i>
+                </button>
+                <button type="button" class="btn action-btn" title="delete" data-bs-toggle="modal"
+                  data-bs-target="#customFilterdeleteModal">
+                  <i class="mdi mdi-delete"></i>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <hr>
+          </hr>
+          <div class="row">
+            <div class="col-auto d-flex align-items-center gap-2 mb-2">
+              <div class="form-check p-0 d-flex align-items-center gap-1">
+                <input type="radio" class="form-check-input p-0 m-0" name="new" id="new" checked="">
+                <label class="form-check-label label" for="orgAll">New</label>
+              </div>
+              <div class="form-check d-flex align-items-center gap-1 p-0">
+                <input type="radio" class="form-check-input p-0 m-0" name="new" id="edit">
+                <label class="form-check-label label" for="orgSpecific">Edit</label>
+              </div>
+            </div>
+            <div class="mb-2 d-flex align-items-center gap-2 filtername">
+              <label for="ex-subject" class="label mb-1">Filter Name:</label>
+              <input type="text" id="ex-subject" class="form-control">
+            </div>
+            <div class="mb-2 d-flex align-items-center gap-2 description">
+              <label for="ex-description" class="label mb-1" style="visibility: hidden;">Description:</label>
+              <textarea id="ex-description" rows="4" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Confirm Delete the Custom Filter Modal  -->
+  <div class="modal fade" id="customFilterdeleteModal" tabindex="-1" aria-labelledby="customFilterdeleteModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-3 shadow">
+        <div
+          class="modal-header container-head text-white d-flex justify-content-between align-items-center flex-wrap px-3 py-2">
+          <h6 class="mb-0">Confirm</h6>
+          <div class="right-icons d-flex">
+            <div class="division border-left-0">
+              <!-- Help / Close -->
+
+              <a href="" class="icon-btn" title="Close" data-bs-dismiss="modal">
+                <i class="mdi mdi-window-close fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal-body px-3 py-2">
+          <div class="row">
+            <p class="mb-2">Delete this Record?</p>
+
+            <div class="modal-footer px-3 py-2 border-top text-end d-block">
+              <button type="button" class="btn btn-modal-cancel btn-sm" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-modal-save btn-sm">Ok</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    /* Global handler — works for many dropdowns; uses pointerdown (or mousedown fallback)
+  to capture selection BEFORE Bootstrap closes the menu. Place this after Bootstrap JS. */
+    (function () {
+      // event name to use
+      const downEvent = ('onpointerdown' in window) ? 'pointerdown' : 'mousedown';
+
+      // safely set visible label and hidden value
+      function applySelection(item) {
+        if (!item) return;
+        const dropdown = item.closest('.custom-select-dropdown');
+        if (!dropdown) return;
+
+        const toggleBtn = dropdown.querySelector('.dropdown-toggle');
+        if (!toggleBtn) return;
+
+        // ensure selected-text span exists
+        let label = toggleBtn.querySelector('.selected-text');
+        if (!label) {
+          label = document.createElement('span');
+          label.className = 'selected-text';
+          toggleBtn.insertBefore(label, toggleBtn.firstChild);
+        }
+
+        const value = (item.dataset.value ?? '').trim();
+        label.textContent = value || (item.textContent || '').trim();
+
+        // store hidden input if consumer needs the value in a form
+        let hidden = dropdown.querySelector('input.dropdown-value[type="hidden"]');
+        if (!hidden) {
+          hidden = document.createElement('input');
+          hidden.type = 'hidden';
+          hidden.className = 'dropdown-value';
+          dropdown.appendChild(hidden);
+        }
+        hidden.value = value;
+
+        // mark active class visually
+        dropdown.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+
+        // emit a custom event from the dropdown root
+        dropdown.dispatchEvent(new CustomEvent('custom-select:change', {
+          detail: { value, desc: item.dataset.desc ?? item.querySelector('span:last-child')?.textContent?.trim() ?? '' }
+        }));
+      }
+
+      // capture pointer/mouse down earlier than Bootstrap's handlers (use capture)
+      document.addEventListener(downEvent, function (e) {
+        const item = e.target.closest('.custom-select-dropdown .dropdown-item');
+        if (!item) return;
+
+        // ignore right/middle clicks on mousedown
+        if (e.type === 'mousedown' && e.button !== 0) return;
+
+        // apply selection now (before menu hide)
+        applySelection(item);
+
+        // do NOT call e.stopPropagation() or stopImmediatePropagation() here.
+        // Let Bootstrap close the dropdown naturally after this handler.
+      }, true); // capture phase
+
+      // keyboard support: Enter/Space on focused dropdown item
+      document.addEventListener('keydown', function (e) {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        const active = document.activeElement;
+        if (!active) return;
+        if (!active.closest) return;
+        const item = active.closest('.custom-select-dropdown .dropdown-item');
+        if (!item) return;
+        e.preventDefault();
+        applySelection(item);
+        // close the dropdown via bootstrap API if available
+        const dropdownRoot = item.closest('.custom-select-dropdown');
+        const toggle = dropdownRoot.querySelector('[data-bs-toggle="dropdown"]');
+        if (toggle && typeof bootstrap !== 'undefined' && bootstrap.Dropdown) {
+          const inst = bootstrap.Dropdown.getInstance(toggle) || new bootstrap.Dropdown(toggle);
+          inst.hide();
+        }
+      });
+
+      // when dropdown opens, focus previously selected item (so keyboard navigation continues)
+      document.addEventListener('shown.bs.dropdown', function (e) {
+        const dropdownRoot = e.target.closest('.custom-select-dropdown');
+        if (!dropdownRoot) return;
+        const selectedVal = dropdownRoot.querySelector('.dropdown-value')?.value;
+        let itemToFocus = null;
+        if (selectedVal) {
+          itemToFocus = Array.from(dropdownRoot.querySelectorAll('.dropdown-item')).find(it => it.dataset.value === selectedVal);
+        }
+        // fallback: first selectable item
+        if (!itemToFocus) itemToFocus = dropdownRoot.querySelector('.dropdown-item');
+        if (itemToFocus) itemToFocus.focus();
+      });
+    })();
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.mailMerge').forEach(radio => {
+        radio.addEventListener('change', function () {
+          // Find the closest `.sub-card` that contains this radio
+          const container = this.closest('.sub-card');
+
+          if (!container) return;
+
+          // Find the fileFormat dropdown inside this `.sub-card`
+          const fileFormat = container.querySelector('.fileFormat');
+          if (fileFormat) {
+            fileFormat.disabled = false; // enable
+          }
+        });
+      });
+
+      // Also disable when selecting "All Pools"
+      document.querySelectorAll('.form-check-input:not(.mailMerge)').forEach(radio => {
+        radio.addEventListener('change', function () {
+          const container = this.closest('.sub-card');
+          if (!container) return;
+          const fileFormat = container.querySelector('.fileFormat');
+          if (fileFormat) {
+            fileFormat.disabled = true; // disable
+          }
+        });
+      });
+    });
+  </script>
+
+  <script>
+    function showAlert() {
+      document.getElementById('alert').classList.remove('d-none');
+    }
+    function hideAlert() {
+      document.getElementById('alert').classList.add('d-none');
+    }
+
+    const blurOverlay = document.getElementById('dropdownBlurOverlay');
+    const dropdowns = document.querySelectorAll('.dropdown-custom');
+
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('mouseenter', () => {
+        blurOverlay.classList.add('active');
+      });
+      dropdown.addEventListener('mouseleave', () => {
+        blurOverlay.classList.remove('active');
+      });
+    });
+  </script>
+  <!-- <script>
+    const specorg = document.getElementsByClassName('mailMerge');
+    // const specorg = document.getElementById('specorg');
+    const report1099 = document.getElementById('r1099r');
+    // const fileFormat = document.getElementById('fileFormat');
+    const fileFormat = document.getElementsByClassName('fileFormat');
+
+    function toggleFileFormat() {
+      fileFormat.disabled = !specorg.checked;
+    }
+
+    specorg.addEventListener('change', toggleFileFormat);
+    report1099.addEventListener('change', toggleFileFormat);
+  </script> -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll('.dropdown-column a').forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault(); // stop normal anchor jump
+          const targetId = this.getAttribute('href').split('#')[1];
+          const tabTriggerEl = document.querySelector(`[data-bs-target="#${targetId}"]`);
+          if (tabTriggerEl) {
+            const tab = new bootstrap.Tab(tabTriggerEl);
+            tab.show();
+          }
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+    });
+  </script>
+  <script>
+    const selectEl = document.getElementById('fileFormat1');
+
+    // Format all options with proper gap
+    function formatOptions() {
+      for (let option of selectEl.options) {
+        if (option.dataset.desc) {
+          option.text = option.dataset.name.padEnd(8) + option.dataset.desc;
+        }
+      }
+    }
+
+    // When selection changes, display only short name in the closed state
+    selectEl.addEventListener('change', function () {
+      const selected = this.selectedOptions[0];
+      this.dataset.displayValue = selected.dataset.name; // save short name
+    });
+
+    // When opening dropdown (focus), restore name+description
+    selectEl.addEventListener('focus', function () {
+      formatOptions();
+    });
+
+    // When dropdown closes (blur), show only the selected short name
+    selectEl.addEventListener('blur', function () {
+      const selected = this.selectedOptions[0];
+      if (selected && selected.dataset.name) {
+        selected.text = selected.dataset.name;
+      }
+    });
+
+    // Initial setup
+    formatOptions();
+
+
+    // document.querySelectorAll('.custom-select-dropdown .dropdown-item').forEach(item => {
+    //   item.addEventListener('click', function (e) {
+    //     e.preventDefault();
+    //     const name = this.dataset.value;
+    //     document.getElementById('fileFormatDropdown').textContent = name; // Show only short code
+    //   });
+    // });
+
+
+  </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en-us">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PG Calc Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PGcalc</title>
+  <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/mdi/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body {
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
       height: 100%;
       font-family: Arial, sans-serif;
     }
+
     .login-wrapper {
       background: url('assets/img/Login.svg') center/cover no-repeat;
       height: 100vh;
@@ -17,6 +32,7 @@
       justify-content: center;
       align-items: center;
     }
+
     .content-login {
       display: flex;
       width: 90%;
@@ -25,6 +41,7 @@
       border-radius: 12px;
       overflow: hidden;
     }
+
     .left {
       flex: 1;
       /* removed gray background to let the image show */
@@ -35,29 +52,33 @@
       align-items: center;
       padding: 2rem;
     }
+
     .left img {
       max-width: 200px;
       margin-bottom: 1rem;
     }
+
     .left h1 {
       font-size: 2rem;
       text-align: center;
     }
+
     .right {
       flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     .login-box {
       width: 100%;
       max-width: 400px;
-      background: rgba(255,255,255,0.25);
+      background: rgba(255, 255, 255, 0.25);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       border-radius: 10px;
       padding: 1.5rem;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
@@ -65,20 +86,24 @@
       overflow: auto;
       position: relative;
     }
+
     .login-box h2 {
       text-align: center;
       margin-bottom: 0.5rem;
       color: #000;
     }
+
     .login-box label {
       font-weight: bold;
       font-size: 0.85rem;
     }
+
     .login-box input {
       padding: 0.5rem;
       border-radius: 5px;
       border: 1px solid #ccc;
     }
+
     .login-box button {
       padding: 0.75rem;
       border: none;
@@ -87,9 +112,11 @@
       color: white;
       cursor: pointer;
     }
+
     .login-box button:hover {
       background-color: #1a4721;
     }
+
     .error-message {
       color: #c0392b;
       background-color: #fce4e4;
@@ -98,10 +125,12 @@
       font-size: 0.85rem;
       text-align: center;
     }
+
     .forgot {
       text-align: right;
       font-size: 0.8rem;
     }
+
     .notes-message {
       background-color: white;
       color: #333;
@@ -112,33 +141,87 @@
     }
   </style>
 </head>
+
 <body>
-  <div class="login-wrapper">
-    <div class="content-login">
-      <div class="left">
-        <img src="assets/img/pg-Calc-logo.svg" alt="PG Calc Logo" />
-        <h1>Everything You Need in Planned Giving</h1>
-      </div>
-      <div class="right">
-        <div class="login-box">
-          <div class="error-message">
-            You have entered an invalid client, username, and password combination. Please try again.
+  <div class=" bg-login p-5">
+    <div class="row z-2 mx-0 justify-content-around">
+      <div class="row">
+        <div class="mx-0 p-0 marquee">
+          <marquee width="100%" direction="left"
+            style="color: #fff; height:auto; display:inline-block; white-space:nowrap;">This
+            is
+            testing the ability to add a message.
+            Hi anand, this is testing the ability to add a message.
+          </marquee>
+        </div>
+        <div class="mx-0 py-3 px-0 justify-content-around d-flex align-items-center">
+          <div class="col-7">
+            <img src="./assets/img/logo.svg" class="w-50" alt="">
+            <h1 class="text-white fw-bold pt-2 w-60">Everything You Need in Planned Giving</h1>
           </div>
-          <h2>GiftWrap Login</h2>
-          <label>Client Nickname</label>
-          <input type="text" value="multiclientb42" />
-          <label>Username</label>
-          <input type="text" value="administrator" />
-          <label>Password</label>
-          <input type="password" placeholder="Password" />
-          <button>Log In</button>
-          <div class="forgot"><a href="#">Forgot Password?</a></div>
-          <div class="notes-message">
-            This is a test. This is testing the ability to add a message. Hi Anand, this is testing the ability to add a message.
+          <div class="col-5 bg-light-card py-5 px-4 rounded-4 ">
+            <div class="row mx-0 position-relative">
+              <div class="mb-5rem">
+              </div>
+              <div class="m-auto w-80 mb-2 alert alert-danger alert-dismissible d-flex align-items-center pe-3" role="alert">
+                <i class="fa fa-exclamation-triangle"></i>
+                <div class="ps-3">
+                  <p class="mb-0 w-90">
+                    You have entered an invalid client, username, and password combination. Please try again.
+                  </p>
+
+                </div>
+                <button type="button" class="btn-close align-self-center customCloseForLogin" data-bs-dismiss="alert"
+                  aria-label="Close"></button>
+              </div>
+              <main class="form-signin w-80 m-auto p-0">
+
+                <form method="post">
+                  <div id="dvLogin">
+                    <h1 class="h3 mb-2 fw-medium text-center ">GiftWrap Login</h1>
+                    <div class="mb-1">
+                      <label for="" class="fs-6 ps-1 ">Client Nickname</label>
+                      <input type="text" class="form-control" required id="ClientNickName" name="ClientNickName"
+                        oninvalid="this.setCustomValidity('Client Nickname cannot be blank.')"
+                        oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="mb-1">
+                      <label for="">Username</label>
+                      <input type="text" class="form-control" required id="UserName" name="UserName"
+                        oninvalid="this.setCustomValidity('Username cannot be blank.')"
+                        oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="mb-4 position-relative">
+                      <label for="">Password</label>
+                      <input type="password" required class="form-control" name="password" id="password" value=""
+                        oninvalid="this.setCustomValidity('Password cannot be blank.')"
+                        oninput="this.setCustomValidity('')">
+                      <span class="password-toggle-icon" id="togglePassword"><i class="fas fa-eye-slash text-eye"
+                          id="eyeIcon"></i></span>
+                    </div>
+                    <button class="btn btn-success w-100 py-2 px-1 fw-medium" type="submit"
+                      formaction="/GiftWrap/Login/ValidateUser">Log in</button>
+
+                    <a href="/GiftWrap/Login/ForgotPassword" class="text-success link-underline-success">
+                      <p class="mt-2 mb-0 text-body-secondary text-end "> forgot password?</p>
+                    </a>
+                  </div>
+                  <input name="__RequestVerificationToken" type="hidden"
+                    value="CfDJ8IAJdzRCvkxBpTmu2x_unCsbpvx2ykT5TuFFUsiJaFkN-KmyphLOHYwE_ewUHT_gAEC5pfipJjAAGspp5UzbrivEijJ_rF9EoAdAJpuRLf3dotPrKZq3v6b2XpvhLrz4BNSuakEwRDMjBAmYHwoY0rM" />
+                </form>
+              </main>
+
+            </div>
           </div>
+          </section>
+
         </div>
       </div>
     </div>
-  </div>
 </body>
+<!-- <script type="text/javascript" src="/GiftWrap/lib/jquery/dist/jquery.js"></script> -->
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/login.js"></script>
+
 </html>
